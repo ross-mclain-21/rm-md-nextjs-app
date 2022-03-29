@@ -1,0 +1,59 @@
+@import 'globals.variables';
+@import 'globals.buttons';
+
+@import '../node_modules/bootstrap/scss/root';
+@import '../node_modules/bootstrap/scss/reboot';
+@import '../node_modules/bootstrap/scss/type';
+@import '../node_modules/bootstrap/scss/images';
+@import '../node_modules/bootstrap/scss/containers';
+@import '../node_modules/bootstrap/scss/grid';
+
+@import '../node_modules/bootstrap/scss/navbar';
+@import '../node_modules/bootstrap/scss/bootstrap-utilities';
+@import '../node_modules/bootstrap/scss/utilities';
+
+
+
+@font-face {
+  font-family: 'PressStart2P';
+  src: local('PressStart2P'), url('/sass-assets/fonts/PressStart2P-Regular.ttf') format('truetype');
+}
+//General Styling
+@font-face {
+  font-family: 'IBMPlexMono';
+  src: local('IBMPlexMono'), url('/sass-assets/fonts/IBMPlexMono-Regular.ttf') format('truetype');
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: IBMPlexMono, serif !important;
+}
+
+#app {
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+hr {
+  color: $coding-green-color;
+}
+
+a {
+  color: $coding-green-color;
+
+  &:hover {
+    color: $coding-green-color-hover;
+  }
+}
+
+.opacity-0{
+  opacity: 0 !important;
+}
+.opacity-1{
+  opacity: 1 !important;
+}
+@import "./home/home";

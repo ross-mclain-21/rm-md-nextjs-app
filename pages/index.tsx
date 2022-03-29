@@ -1,12 +1,13 @@
 import React from 'react';
 
-import Hero from '../components/Hero';
+import HomeHeader from '../components/home/HomeHeader';
+import HomeDetail from '../components/home/HomeDetail';
 
 export default function Index() {
   return (
-    <>
-      <Hero />
-      <hr />
-    </>
+    <div className={'d-flex flex-column container justify-content-center flex-fill'}>
+      <HomeHeader />
+      <HomeDetail />
+    </div>
   );
 }

@@ -1,0 +1,22 @@
+// Required
+@import '../node_modules/bootstrap/scss/functions';
+
+//global variables
+$coding-green-color: rgb(3 199 181);
+$coding-green-color-hover: rgb(5 225 205);
+$coding-red-color: #bb2b2b;
+$coding-red-color-hover: #d13f3f;
+$background-color: rgb(30, 39, 44);
+
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+//override bootstrap variables
+$body-bg: $background-color;
+$body-color: $coding-green-color;
+
+// Required
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';

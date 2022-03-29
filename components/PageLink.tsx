@@ -3,7 +3,21 @@ import Link from 'next/link';
 
 import NavBarItem from './NavBarItem';
 
-const PageLink = ({ children, href, className, icon, tabIndex, testId }:{children?:any, href?:any, className?:any, icon?:any, tabIndex?:any,  testId?:any}) => {
+const PageLink = ({
+  children,
+  href,
+  className,
+  icon,
+  tabIndex,
+  testId
+}: {
+  children?: any;
+  href?: any;
+  className?: any;
+  icon?: any;
+  tabIndex?: any;
+  testId?: any;
+}) => {
   return (
     <Link href={href}>
       <a>

@@ -1,0 +1,48 @@
+@import 'globals.variables';
+@import '../node_modules/bootstrap/scss/buttons';
+
+//custom buttons
+.btn-code-green {
+  @extend .btn-success;
+  background-color: $coding-green-color;
+  color: $background-color;
+
+  &:hover {
+    background-color: $coding-green-color-hover;
+  }
+}
+
+.btn-outline-code-green {
+  @extend .btn-outline-success;
+  border-color: $coding-green-color;
+  color: $coding-green-color;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $coding-green-color;
+    color: $background-color !important;
+  }
+}
+
+//custom buttons
+.btn-code-red {
+  @extend .btn-danger;
+  background-color: $coding-red-color;
+  color: $background-color;
+
+  &:hover {
+    background-color: $coding-red-color-hover;
+  }
+}
+
+.btn-outline-code-red {
+  @extend .btn-outline-danger;
+  border-color: $coding-red-color;
+  color: $coding-red-color;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $coding-red-color;
+    color: $background-color !important;
+  }
+}

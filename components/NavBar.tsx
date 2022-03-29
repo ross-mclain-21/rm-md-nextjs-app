@@ -24,7 +24,7 @@ const NavBar = () => {
 
   return (
     <div className="nav-container" data-testid="navbar">
-      <Navbar color="light" light expand="md">
+      <Navbar color="dark" dark expand="md">
         <Container>
           <NavbarBrand className="logo" />
           <NavbarToggler onClick={toggle} data-testid="navbar-toggle" />
@@ -62,7 +62,8 @@ const NavBar = () => {
                     href="/api/auth/login"
                     className="btn btn-primary btn-margin"
                     tabIndex={0}
-                    testId="navbar-login-desktop">
+                    testId="navbar-login-desktop"
+                  >
                     Log in
                   </AnchorLink>
                 </NavItem>
@@ -103,7 +104,8 @@ const NavBar = () => {
                   href="/api/auth/login"
                   className="btn btn-primary btn-block"
                   tabIndex={0}
-                  testId="navbar-login-mobile">
+                  testId="navbar-login-mobile"
+                >
                   Log in
                 </AnchorLink>
               </Nav>
@@ -113,7 +115,8 @@ const NavBar = () => {
                 id="nav-mobile"
                 className="d-md-none justify-content-between"
                 navbar
-                data-testid="navbar-menu-mobile">
+                data-testid="navbar-menu-mobile"
+              >
                 <NavItem>
                   <span className="user-info">
                     <img
@@ -139,7 +142,8 @@ const NavBar = () => {
                     href="/api/auth/logout"
                     className="btn btn-link p-0"
                     icon="power-off"
-                    testId="navbar-logout-mobile">
+                    testId="navbar-logout-mobile"
+                  >
                     Log out
                   </AnchorLink>
                 </NavItem>
