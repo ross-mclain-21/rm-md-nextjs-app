@@ -1,29 +1,23 @@
 import React from 'react';
 import Link from 'next/link';
 
-import NavBarItem from './NavBarItem';
+import NavBarItem from '../nav/NavBarItem';
 
 const PageLink = ({
   children,
   href,
   className,
-  icon,
-  tabIndex,
   testId
 }: {
   children?: any;
   href?: any;
   className?: any;
-  icon?: any;
-  tabIndex?: any;
   testId?: any;
 }) => {
   return (
     <Link href={href}>
-      <a>
-        <NavBarItem href={href} className={className} icon={icon} tabIndex={tabIndex} testId={testId}>
-          {children}
-        </NavBarItem>
+      <a id={testId} className={className}>
+        {children}
       </a>
     </Link>
   );

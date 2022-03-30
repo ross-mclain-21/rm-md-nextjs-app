@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { Button } from 'reactstrap';
 import { withPageAuthRequired } from '@auth0/nextjs-auth0';
 
-import Loading from '../components/Loading';
-import ErrorMessage from '../components/ErrorMessage';
-import Highlight from '../components/Highlight';
+import Loading from '../components/common/Loading';
+import ErrorMessage from '../components/common/ErrorMessage';
+import Highlight from '../components/common/Highlight';
 
 function External() {
   const [state, setState] = useState({ isLoading: false, response: undefined, error: undefined });
@@ -32,7 +32,7 @@ function External() {
   const { isLoading, response, error } = state;
 
   return (
-    <>
+    <div className="container">
       <div className="mb-5" data-testid="external">
         <h1 data-testid="external-title">External API</h1>
         <div data-testid="external-text">
@@ -63,7 +63,7 @@ function External() {
           </div>
         )}
       </div>
-    </>
+    </div>
   );
 }
 

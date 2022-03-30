@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 
-import PageLink from '../../components/PageLink';
+import PageLink from '../../components/common/PageLink';
 
 describe('PageLink', () => {
   it('should render without crashing', async () => {

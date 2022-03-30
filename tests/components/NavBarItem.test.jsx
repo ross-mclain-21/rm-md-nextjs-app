@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 
-import NavBarItem from '../../components/NavBarItem';
+import NavBarItem from '../../components/nav/NavBarItem';
 
 describe('NavBarItem', () => {
   it('should render without crashing', async () => {

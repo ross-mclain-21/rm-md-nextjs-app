@@ -2,15 +2,15 @@ import React from 'react';
 import { Row, Col } from 'reactstrap';
 import { useUser, withPageAuthRequired } from '@auth0/nextjs-auth0';
 
-import Loading from '../components/Loading';
-import ErrorMessage from '../components/ErrorMessage';
-import Highlight from '../components/Highlight';
+import Loading from '../components/common/Loading';
+import ErrorMessage from '../components/common/ErrorMessage';
+import Highlight from '../components/common/Highlight';
 
 function Profile() {
   const { user, isLoading } = useUser();
 
   return (
-    <>
+    <div className="container">
       {isLoading && <Loading />}
       {user && (
         <>
@@ -35,7 +35,7 @@ function Profile() {
           </Row>
         </>
       )}
-    </>
+    </div>
   );
 }
 

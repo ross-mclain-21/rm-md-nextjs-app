@@ -21,6 +21,11 @@
   animation: blink-animation 1.5s steps(2, start) infinite;
   -webkit-animation: blink-animation 1.5s steps(2, start) infinite;
 }
+.home-detail-btn{
+  min-width: 200px;
+}
+
+
 @keyframes blink-animation {
   to {
     visibility: hidden;

@@ -14,8 +14,9 @@ import {
 } from 'reactstrap';
 import { useUser } from '@auth0/nextjs-auth0';
 
-import PageLink from './PageLink';
-import AnchorLink from './AnchorLink';
+import PageLink from '../common/PageLink';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPowerOff, faUser } from '@fortawesome/free-solid-svg-icons';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,48 +25,33 @@ const NavBar = () => {
 
   return (
     <div className="nav-container" data-testid="navbar">
-      <Navbar color="dark" dark expand="md">
+      <Navbar color="dark" dark className="bg-transparent py-3" expand="md">
         <Container>
           <NavbarBrand className="logo" />
           <NavbarToggler onClick={toggle} data-testid="navbar-toggle" />
           <Collapse isOpen={isOpen} navbar>
-            <Nav className="mr-auto" navbar data-testid="navbar-items">
-              <NavItem>
-                <PageLink href="/" className="nav-link" testId="navbar-home">
-                  Home
-                </PageLink>
-              </NavItem>
+            <Nav className="me-auto" navbar data-testid="navbar-items">
+              <PageLink href="/" className="btn btn-outline-code-green" testId="navbar-csr">
+                Home
+              </PageLink>
               {user && (
                 <>
-                  <NavItem>
-                    <PageLink href="/csr" className="nav-link" testId="navbar-csr">
-                      Client-side rendered page
-                    </PageLink>
-                  </NavItem>
-                  <NavItem>
-                    <PageLink href="/ssr" className="nav-link" testId="navbar-ssr">
-                      Server-side rendered page
-                    </PageLink>
-                  </NavItem>
-                  <NavItem>
-                    <PageLink href="/external" className="nav-link" testId="navbar-external">
-                      External API
-                    </PageLink>
-                  </NavItem>
+                  <PageLink href="/external" className="btn btn-outline-code-red mx-3" testId="navbar-csr">
+                    External Api Test
+                  </PageLink>
                 </>
               )}
             </Nav>
             <Nav className="d-none d-md-block" navbar>
               {!isLoading && !user && (
                 <NavItem id="qsLoginBtn">
-                  <AnchorLink
+                  <a
                     href="/api/auth/login"
-                    className="btn btn-primary btn-margin"
+                    className="btn btn-outline-code-green btn-sm"
                     tabIndex={0}
-                    testId="navbar-login-desktop"
-                  >
-                    Log in
-                  </AnchorLink>
+                    id="navbar-login-desktop">
+                    Log In
+                  </a>
                 </NavItem>
               )}
               {user && (
@@ -80,19 +66,25 @@ const NavBar = () => {
                       data-testid="navbar-picture-desktop"
                     />
                   </DropdownToggle>
-                  <DropdownMenu>
+                  <DropdownMenu className="dropdown-menu-dark">
                     <DropdownItem header data-testid="navbar-user-desktop">
                       {user.name}
                     </DropdownItem>
                     <DropdownItem className="dropdown-profile" tag="span">
-                      <PageLink href="/profile" icon="user" testId="navbar-profile-desktop">
-                        Profile
+                      <PageLink href="/profile" testId="navbar-profile-desktop">
+                        <div className="d-flex align-items-center">
+                          <FontAwesomeIcon icon={faUser} />
+                          <span className="ms-2">Profile</span>
+                        </div>
                       </PageLink>
                     </DropdownItem>
                     <DropdownItem id="qsLogoutBtn">
-                      <AnchorLink href="/api/auth/logout" icon="power-off" testId="navbar-logout-desktop">
-                        Log out
-                      </AnchorLink>
+                      <a href="/api/auth/logout" id="navbar-logout-desktop">
+                        <div className="d-flex align-items-center">
+                          <FontAwesomeIcon icon={faPowerOff} />
+                          <span className="ms-2">Log Out</span>
+                        </div>
+                      </a>
                     </DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>
@@ -100,14 +92,9 @@ const NavBar = () => {
             </Nav>
             {!isLoading && !user && (
               <Nav className="d-md-none" navbar>
-                <AnchorLink
-                  href="/api/auth/login"
-                  className="btn btn-primary btn-block"
-                  tabIndex={0}
-                  testId="navbar-login-mobile"
-                >
+                <a href="/api/auth/login" className="btn btn-outline-code-green" tabIndex={0} id="navbar-login-mobile">
                   Log in
-                </AnchorLink>
+                </a>
               </Nav>
             )}
             {user && (
@@ -115,8 +102,7 @@ const NavBar = () => {
                 id="nav-mobile"
                 className="d-md-none justify-content-between"
                 navbar
-                data-testid="navbar-menu-mobile"
-              >
+                data-testid="navbar-menu-mobile">
                 <NavItem>
                   <span className="user-info">
                     <img
@@ -133,19 +119,17 @@ const NavBar = () => {
                   </span>
                 </NavItem>
                 <NavItem>
-                  <PageLink href="/profile" icon="user" testId="navbar-profile-mobile">
+                  <PageLink href="/profile" testId="navbar-profile-mobile" className="btn btn-outline-code-green mb-3">
                     Profile
                   </PageLink>
                 </NavItem>
                 <NavItem id="qsLogoutBtn">
-                  <AnchorLink
-                    href="/api/auth/logout"
-                    className="btn btn-link p-0"
-                    icon="power-off"
-                    testId="navbar-logout-mobile"
-                  >
-                    Log out
-                  </AnchorLink>
+                  <a href="/api/auth/logout" className="btn btn-link p-0" id="navbar-logout-mobile">
+                    <div className="d-flex align-items-center">
+                      <FontAwesomeIcon icon={faPowerOff} />
+                      <span className="ms-2">Log Out</span>
+                    </div>
+                  </a>
                 </NavItem>
               </Nav>
             )}

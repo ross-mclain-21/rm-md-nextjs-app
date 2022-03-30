@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 
-import AnchorLink from '../../components/AnchorLink';
+import AnchorLink from '../../components/common/AnchorLink';
 
 describe('AnchorLink', () => {
   it('should render without crashing', async () => {

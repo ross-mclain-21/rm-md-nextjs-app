@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 
-import Highlight from '../../components/Highlight';
+import Highlight from '../../components/common/Highlight';
 
 describe('Highlight', () => {
   it('should render without crashing', async () => {

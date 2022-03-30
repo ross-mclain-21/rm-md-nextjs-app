@@ -55,10 +55,10 @@ function HomeDetail() {
         className="col-md-6 d-flex flex-column align-items-center pt-md-2 pt-4">
         <div className="d-flex flex-column">
           <Link href={'/portfolio'}>
-            <span className="btn btn-outline-code-green mb-3">Portfolio</span>
+            <span className="btn btn-outline-code-green home-detail-btn mb-3">Portfolio</span>
           </Link>
           <Link href={'/resume'}>
-            <span className="btn btn-outline-code-green mb-3">Resume</span>
+            <span className="btn btn-outline-code-green home-detail-btn mb-3">Resume</span>
           </Link>
         </div>
       </motion.div>
