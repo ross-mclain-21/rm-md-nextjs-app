@@ -1,0 +1,126 @@
+﻿[
+  {
+    "title": "This.Website",
+    "description": "This is my newest application and a replacement for my previous personal website. I have worked on a few react apps but this is the first time I have delved into fully building it myself from the ground up. I have built it on top of ASP.Net Core and have it deploying automatically from github, using github actions, to digital ocean using docker.",
+    "technologies": ["HTML", "CSS", "JS", "TS", "React", "SCSS", "Node"],
+    "type": "WEBSITE",
+    "year": 2021,
+    "images": [
+      {
+        "src": "/assets/images/portfolio/PersonalWebsite/reactsite.png",
+        "alt": "React Website Landing Page"
+      }
+    ]
+  },
+  {
+    "title": "Job Estimator",
+    "link": "http://www.jobestimator.mclain.de",
+    "description": "I created this website for my dad to enable him to build out and track job estimates from the ground up. It allows for work items to be defined with an average time requirement and also allows for overrides when unexpected circumstances arise.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JS",
+      "C#",
+      "ASP.NET",
+      "Entity Framework",
+      "SQL"
+    ],
+    "type": "WEBSITE",
+    "year": 2021,
+    "images": [
+      {
+        "src": "/assets/images/portfolio/PersonalWebsite/jobestimator.png",
+        "alt": "Job Estimator"
+      }
+    ]
+  },
+  {
+    "title": "Jordan Dube Portfolio",
+    "description": "This is a website I created for my friend Jordan who needed a website that provided a central location for all links to his social media and other projects.",
+    "technologies": ["HTML", "CSS", "JS", "C#", "ASP.NET"],
+    "type": "WEBSITE",
+    "year": 2019,
+    "images": [
+      {
+        "src": "/assets/images/portfolio/JD/JDUBE.jpg",
+        "alt": "Jordan Dube Personal Website"
+      }
+    ]
+  },
+  {
+    "title": "Mclain.de",
+    "description": "One of the many iterations of my personal website. I began it in 2018, building on my experience at Tyler Technologies. It is built using ASP.Net MVC with cshtml, JS/JQuery, CSS with an Entity Framework code first SQL database for authentication and data.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JS",
+      "C#",
+      "ASP.NET",
+      "Entity Framework",
+      "SQL"
+    ],
+    "type": "WEBSITE",
+    "year": 2018,
+    "images": [
+      {
+        "src": "/assets/images/portfolio/PersonalWebsite/Mclain.de.png",
+        "alt": "Personal Website Mclain.de"
+      }
+    ]
+  },
+  {
+    "title": "Precision Collision Repair",
+    "description": "My very first fully developed website. I was just coming off my 3rd year of college and a friend of mine from high-school knew I was in this field and asked if I could help him out with his company website! I made a simple website using straight html, css, and js and published it on GoDaddy.",
+    "technologies": ["HTML", "CSS", "JS"],
+    "type": "WEBSITE",
+    "year": 2016,
+    "images": [
+      {
+        "src": "/assets/images/portfolio/PCR/precision%20collision%20repair2.jpg",
+        "alt": "Precision Collision Repair Website Image"
+      }
+    ]
+  },
+  {
+    "title": "Celebration At Theos",
+    "link": "https://www.mclain.de/CelebrationAtTheos/CelebrationAtTheos/Index",
+    "description": "My friends and I entered into a 48 hour game jam with the theme of celebration. We ended up coming up with this idea for a cat trying to gather items for a party with their fellow cat friends. Theo the cat has to avoid his owners while grabbing everything and bringing it to his cat bed in preparation for the party.",
+    "technologies": ["C#", "Unity"],
+    "type": "VIDEO GAME",
+    "year": 2020,
+    "images": [
+      {
+        "src": "/assets/images/portfolio/CelebrationAtTheos/celebrationattheos.png",
+        "alt": "Celebration At Theos Landing Page"
+      }
+    ]
+  },
+  {
+    "title": "Ninja Runner",
+    "link": "https://www.mclain.de/NinjaRunner/NinjaRunner/Index",
+    "description": "This is a small, mobile friendly game I developed during my internship at the CI2 lab. The user has to dodge the incoming bouncing balls to keep their life above 0 for as long as possible. If they allow the green balls to hit them, they will gain health back.",
+    "technologies": ["C#", "Unity"],
+    "type": "VIDEO GAME",
+    "year": 2016,
+    "images": [
+      {
+        "src": "/assets/images/portfolio/Ballgame/running.png",
+        "alt": "Ninja Runner Running"
+      }
+    ]
+  },
+  {
+    "title": "King and Country",
+    "link": "https://www.mclain.de/KingCountry/KingCountry/Index",
+    "description": "During an internship at the CI2 lab on the USM campus while attending college, I built this little medieval simulation game. It is a top down view of a group of settlers who require direction. You are able to command them to: build structures, cut down trees, hunt and much more all while they have a need for sleep, water, and hunger. This is where I learned so much about C# and Unity, and was how I was able to launch myself into ASP.Net at Tyler Technologies.",
+    "technologies": ["C#", "Unity"],
+    "type": "VIDEO GAME",
+    "year": 2016,
+    "images": [
+      {
+        "src": "/assets/images/portfolio/Crown And Country/Building.png",
+        "alt": "King And County Building"
+      }
+    ]
+  }
+]

@@ -1,0 +1,5 @@
+@use '../globals.variables';
+
+.react-pdf__Page__canvas {
+  border: 2px solid globals.$coding-green-color;
+}

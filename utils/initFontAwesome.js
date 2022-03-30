@@ -1,10 +1,13 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faLink, faPowerOff, faUser } from '@fortawesome/free-solid-svg-icons';
+
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
 
 function initFontAwesome() {
-  library.add(faLink);
-  library.add(faUser);
-  library.add(faPowerOff);
+  library.add(fab);
+  library.add(fas);
+  library.add(far);
 }
 
 export default initFontAwesome;
