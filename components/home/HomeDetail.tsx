@@ -30,7 +30,13 @@ function HomeDetail() {
             link="mailto:mclain.development@gmail.com"
           />
 
-          <HomeDetailListItem faIcon={faHashtag} text={'1 (207) 420-6255'} faClasses="fa-1x" />
+          {/*<HomeDetailListItem*/}
+          {/*  faIcon={faHashtag}*/}
+          {/*  text={'1 (207) 420-6255'}*/}
+          {/*  faClasses="fa-1x"*/}
+          {/*  isLink={true}*/}
+          {/*  link="tel:12074206255"*/}
+          {/*/>*/}
 
           <HomeDetailListItem
             faIcon={faGithub}

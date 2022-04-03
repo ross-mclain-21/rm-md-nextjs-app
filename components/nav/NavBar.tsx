@@ -47,7 +47,7 @@ const NavBar = () => {
                 <NavItem id="qsLoginBtn">
                   <a
                     href="/api/auth/login"
-                    className="btn btn-outline-code-green btn-sm"
+                    className="btn btn-outline-code-green"
                     tabIndex={0}
                     id="navbar-login-desktop">
                     Log In
