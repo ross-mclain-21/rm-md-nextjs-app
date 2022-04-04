@@ -8,9 +8,28 @@ datasource db {
 }
 
 model User {
-  id    Int     @id @default(autoincrement())
-  email String  @unique
-  name  String?
+  id           Int            @id @default(autoincrement())
+  email        String         @unique
+  name         String?
   phone_number String?
+  RolesOnUsers RolesOnUsers[]
 }
 
+model Role {
+  id           Int            @id @default(autoincrement())
+  slug         String         @unique
+  name         String
+  description  String?
+  RolesOnUsers RolesOnUsers[]
+}
+
+model RolesOnUsers {
+  user       User     @relation(fields: [userId], references: [id])
+  userId     Int // relation scalar field (used in the `@relation` attribute above)
+  role       Role     @relation(fields: [roleId], references: [id])
+  roleId     Int // relation scalar field (used in the `@relation` attribute above)
+  assignedAt DateTime @default(now())
+  assignedBy String
+
+  @@id([userId, roleId])
+}
