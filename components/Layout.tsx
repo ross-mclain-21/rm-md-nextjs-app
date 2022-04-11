@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container } from 'reactstrap';
 import Head from 'next/head';
 
 import NavBar from './nav/NavBar';

@@ -28,15 +28,21 @@ const NavBar = () => {
       <Navbar color="dark" dark className="bg-transparent py-3" expand="md">
         <Container>
           <NavbarBrand className="logo me-0" />
-          <NavbarToggler onClick={toggle} data-testid="navbar-toggle" />
+          <NavbarToggler onClick={toggle} className="mb-3" data-testid="navbar-toggle" />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="me-auto" navbar data-testid="navbar-items">
-              <PageLink href="/" className="btn btn-outline-code-green my-3" testId="navbar-csr">
+              <PageLink href="/" className="btn btn-outline-code-green mb-3 me-md-3" testId="navbar-home">
                 Home
+              </PageLink>
+              <PageLink href="/portfolio" className="btn btn-outline-code-green mb-3 me-md-3" testId="navbar-portfolio">
+                Portfolio
+              </PageLink>
+              <PageLink href="/resume" className="btn btn-outline-code-green mb-3 me-md-3" testId="navbar-resume">
+                Resume
               </PageLink>
               {user && (
                 <>
-                  <PageLink href="/external" className="btn btn-outline-code-red mx-3" testId="navbar-csr">
+                  <PageLink href="/external" className="btn btn-outline-code-red mb-3 me-md-3" testId="navbar-csr">
                     External Api Test
                   </PageLink>
                 </>
@@ -100,31 +106,34 @@ const NavBar = () => {
             {user && (
               <Nav
                 id="nav-mobile"
-                className="d-md-none justify-content-between"
+                className="d-md-none justify-content-between p-3 border-code-green border-radius-1 mt-3"
                 navbar
                 data-testid="navbar-menu-mobile">
                 <NavItem>
-                  <span className="user-info">
+                  <div className="d-flex align-items-center mb-2">
                     <img
                       src={user.picture}
                       alt="Profile"
                       className="nav-user-profile d-inline-block rounded-circle mr-3"
-                      width="50"
-                      height="50"
+                      width="40"
+                      height="40"
                       data-testid="navbar-picture-mobile"
                     />
-                    <h6 className="d-inline-block" data-testid="navbar-user-mobile">
+                    <h6 className="d-inline-block ms-2" data-testid="navbar-user-mobile">
                       {user.name}
                     </h6>
-                  </span>
+                  </div>
                 </NavItem>
                 <NavItem>
-                  <PageLink href="/profile" testId="navbar-profile-mobile" className="btn btn-outline-code-green mb-3">
-                    Profile
+                  <PageLink href="/profile" className="mb-1" testId="navbar-profile-desktop">
+                    <div className="d-flex align-items-center">
+                      <FontAwesomeIcon icon={faUser} />
+                      <span className="ms-2">Profile</span>
+                    </div>
                   </PageLink>
                 </NavItem>
                 <NavItem id="qsLogoutBtn">
-                  <a href="/api/auth/logout" className="btn btn-link p-0" id="navbar-logout-mobile">
+                  <a href="/api/auth/logout" className="" id="navbar-logout-mobile">
                     <div className="d-flex align-items-center">
                       <FontAwesomeIcon icon={faPowerOff} />
                       <span className="ms-2">Log Out</span>
