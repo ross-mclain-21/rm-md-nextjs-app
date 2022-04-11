@@ -27,11 +27,11 @@ const NavBar = () => {
     <div className="nav-container" data-testid="navbar">
       <Navbar color="dark" dark className="bg-transparent py-3" expand="md">
         <Container>
-          <NavbarBrand className="logo" />
+          <NavbarBrand className="logo me-0" />
           <NavbarToggler onClick={toggle} data-testid="navbar-toggle" />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="me-auto" navbar data-testid="navbar-items">
-              <PageLink href="/" className="btn btn-outline-code-green" testId="navbar-csr">
+              <PageLink href="/" className="btn btn-outline-code-green my-3" testId="navbar-csr">
                 Home
               </PageLink>
               {user && (
