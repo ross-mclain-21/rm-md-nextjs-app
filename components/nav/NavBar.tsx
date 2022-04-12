@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { MutableRefObject, useCallback, useEffect, useRef, useState } from 'react';
 import {
   Collapse,
   Container,
@@ -18,14 +18,31 @@ import PageLink from '../common/PageLink';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPowerOff, faUser } from '@fortawesome/free-solid-svg-icons';
 
-const NavBar = () => {
+const NavBar = ({ appRef }: { appRef: MutableRefObject<HTMLInputElement> }) => {
   const [isOpen, setIsOpen] = useState(false);
   const { user, isLoading } = useUser();
   const toggle = () => setIsOpen(!isOpen);
+  const [hasScrolled, setHasScrolled] = useState(false);
+
+  // The scroll listener
+  const handleScroll = useCallback(e => {
+    const currentScrollY = e.target.scrollTop;
+    if (currentScrollY > 100) {
+      setHasScrolled(true);
+    } else {
+      setHasScrolled(false);
+    }
+  }, []);
+
+  // Attach the scroll listener to the div
+  useEffect(() => {
+    const div = appRef.current;
+    div.addEventListener('scroll', handleScroll);
+  }, [handleScroll]);
 
   return (
     <div className="nav-container" data-testid="navbar">
-      <Navbar color="dark" dark className="bg-transparent py-3" expand="md">
+      <Navbar className={`pt-3 ${hasScrolled ? 'has-scrolled' : ''}`} expand="md" fixed="top">
         <Container>
           <NavbarBrand className="logo me-0" />
           <NavbarToggler onClick={toggle} className="mb-3" data-testid="navbar-toggle" />

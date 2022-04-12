@@ -52,6 +52,12 @@ a {
 }
 
 .navbar{
+  background-color: transparent;
+  transition:0.3s;
+  &.has-scrolled{
+    background-color:rgba(var(--bs-dark-rgb));
+  }
+  
   box-shadow: none;
   .navbar-toggler{
     border-color: $coding-green-color;

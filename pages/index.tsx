@@ -1,13 +1,13 @@
 import React from 'react';
 
-import HomeHeader from '../components/home/HomeHeader';
-import HomeDetail from '../components/home/HomeDetail';
+import Home from '../components/home/Home';
+import Develop from '../components/services/Develop';
 
 export default function Index() {
   return (
-    <div className={'d-flex flex-column container justify-content-center flex-fill'}>
-      <HomeHeader />
-      <HomeDetail />
+    <div>
+      <Home />
+      <Develop />
     </div>
   );
 }
