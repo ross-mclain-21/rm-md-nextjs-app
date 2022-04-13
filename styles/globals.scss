@@ -43,6 +43,9 @@ a {
     text-decoration: none;
   }
 }
+.h-0{
+  height:0 !important;
+}
 
 .opacity-0{
   opacity: 0 !important;
@@ -67,6 +70,10 @@ a {
   }
 }
 
+.code{
+  color:deeppink;
+  opacity: 1;
+}
 
 //custom borders
 .border-dashed {

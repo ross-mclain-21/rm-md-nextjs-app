@@ -42,7 +42,12 @@ function TypeWriter({ message, classes, typingSpeed = 300 }: TypeWriterInput) {
       : message.substring(0, currentState.text.length + 1);
   }
 
-  return <span className={classes}>{state.text}</span>;
+  return (
+    <div className={'d-flex flex-column'}>
+      <span className={classes}>{state.text}</span>
+      <span className={classes + ' opacity-0 h-0'}>{message}</span>
+    </div>
+  );
 }
 
 export default TypeWriter;
