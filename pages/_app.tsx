@@ -7,15 +7,18 @@ import Layout from '../components/Layout';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import initFontAwesome from '../utils/initFontAwesome';
 import '../styles/globals.scss';
+import GlobalContext from '../components/common/GlobalContext';
 
 initFontAwesome();
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <UserProvider>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <GlobalContext.Provider value={{}}>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </GlobalContext.Provider>
     </UserProvider>
   );
 }

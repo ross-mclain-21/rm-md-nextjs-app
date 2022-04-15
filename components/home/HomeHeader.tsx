@@ -5,10 +5,10 @@ import TypeWriter from '../common/TypeWriter';
 
 function HomeHeader() {
   return (
-    <div className="d-flex flex-column align-items-center">
+    <div className="d-flex flex-column align-items-center justify-content-end flex-fill">
       <div>
         <div className="">
-          <TypeWriter message={'WHO AM I'} classes="small code" typingSpeed={200} />
+          <TypeWriter message={'WHO AM I:'} classes="small code" typingSpeed={200} />
         </div>
         <div className="d-flex align-items-center mb-3">
           {/*<FontAwesomeIcon icon={faChevronRight} className="header-chevron" />*/}

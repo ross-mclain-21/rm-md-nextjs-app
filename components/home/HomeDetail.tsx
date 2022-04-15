@@ -5,12 +5,16 @@ import { faAt, faBriefcase, faEnvelope, faHashtag } from '@fortawesome/free-soli
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import TypeWriter from '../common/TypeWriter';
 
 function HomeDetail() {
   return (
-    <div className="row my-3">
-      <div className="col-md-6 d-flex flex-column align-items-center">
-        <div className="d-flex flex-column align-items-md-start align-items-center">
+    <div className="my-3">
+      <div className="d-flex flex-column align-items-center">
+        <div className="d-flex flex-column align-items-center">
+          <div className="">
+            <TypeWriter message={'JOB TITLE:'} classes="small code" typingSpeed={200} />
+          </div>
           <HomeDetailListItem faIcon={faBriefcase} text={'Senior DevOps Engineer'} faClasses="fa-1x" />
           <div className="ms-4">
             <HomeDetailListItem
@@ -21,7 +25,9 @@ function HomeDetail() {
               link="https://www.tylertech.com/"
             />
           </div>
-
+          <div className="mt-3">
+            <TypeWriter message={'HOW TO CONTACT ME:'} classes="small code" typingSpeed={200} />
+          </div>
           <HomeDetailListItem
             faIcon={faEnvelope}
             text={'mclain.development@gmail.com'}
@@ -54,20 +60,20 @@ function HomeDetail() {
           />
         </div>
       </div>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-        className="col-md-6 d-flex flex-column align-items-center pt-md-2 pt-4">
-        <div className="d-flex flex-column">
-          <Link href={'/portfolio'}>
-            <span className="btn btn-outline-code-green home-detail-btn mb-3">Portfolio</span>
-          </Link>
-          <Link href={'/resume'}>
-            <span className="btn btn-outline-code-green home-detail-btn mb-3">Resume</span>
-          </Link>
-        </div>
-      </motion.div>
+      {/*<motion.div*/}
+      {/*  initial={{ opacity: 0 }}*/}
+      {/*  animate={{ opacity: 1 }}*/}
+      {/*  transition={{ duration: 1 }}*/}
+      {/*  className="col-md-6 d-flex flex-column align-items-center pt-md-2 pt-4">*/}
+      {/*  <div className="d-flex flex-column">*/}
+      {/*    <Link href={'/portfolio'}>*/}
+      {/*      <span className="btn btn-outline-code-green home-detail-btn mb-3">Portfolio</span>*/}
+      {/*    </Link>*/}
+      {/*    <Link href={'/resume'}>*/}
+      {/*      <span className="btn btn-outline-code-green home-detail-btn mb-3">Resume</span>*/}
+      {/*    </Link>*/}
+      {/*  </div>*/}
+      {/*</motion.div>*/}
     </div>
   );
 }
