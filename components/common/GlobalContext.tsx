@@ -1,8 +1,14 @@
 ﻿import React, { Dispatch, RefObject, SetStateAction } from 'react';
 
-interface IGlobalContext {}
+interface IGlobalContext {
+  developRef: RefObject<any>;
+  setDevelopRef: Dispatch<SetStateAction<RefObject<any>>>;
+}
 
-const defaultGlobalContext = {};
+const defaultGlobalContext = {
+  developRef: null,
+  setDevelopRef: () => {}
+};
 
 const GlobalContext = React.createContext<IGlobalContext>(defaultGlobalContext);
 

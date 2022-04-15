@@ -33,8 +33,9 @@ hr {
   color: $coding-green-color;
 }
 
-a {
+a,.btn-link {
   color: $coding-green-color;
+  box-shadow: none !important;
 
   &:hover {
     color: $coding-green-color-hover;
@@ -106,3 +107,4 @@ a {
 @import "./home/home";
 @import "./resume/resume";
 @import "./portfolio/portfolio";
+@import "./develop/develop";

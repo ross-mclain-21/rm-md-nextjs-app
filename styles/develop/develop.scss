@@ -1,0 +1,15 @@
+﻿@use '../globals.variables';
+
+.coding-gif{
+  width:500px;
+  height: 300px;
+  background-image: url("~/public/assets/images/coding.gif");
+  background-size: cover;
+  opacity: 0.6;
+  border: 1px solid globals.$coding-green-color;
+  border-radius: 15px;
+}
+
+.develop-container{
+  font-family: PressStart2P, IBMPlexMono, serif;
+}

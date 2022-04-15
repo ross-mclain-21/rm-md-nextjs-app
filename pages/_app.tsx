@@ -1,5 +1,5 @@
 import { AppProps } from 'next/app';
-import React from 'react';
+import React, { RefObject, useState } from 'react';
 import { UserProvider } from '@auth0/nextjs-auth0';
 
 import Layout from '../components/Layout';
@@ -12,9 +12,11 @@ import GlobalContext from '../components/common/GlobalContext';
 initFontAwesome();
 
 export default function App({ Component, pageProps }: AppProps) {
+  const [developRef, setDevelopRef] = useState<RefObject<any>>(null);
+
   return (
     <UserProvider>
-      <GlobalContext.Provider value={{}}>
+      <GlobalContext.Provider value={{ developRef, setDevelopRef }}>
         <Layout>
           <Component {...pageProps} />
         </Layout>
