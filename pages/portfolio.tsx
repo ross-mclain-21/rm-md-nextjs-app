@@ -61,7 +61,7 @@ function Portfolio() {
 
   return (
     <PortfolioContext.Provider value={{ selectedTechnologies, setSelectedTechnologies }}>
-      <div className="my-3 px-md-5 px-3">
+      <div className="my-5 px-md-5 px-3">
         <div className="">
           <div className="d-flex align-items-start flex-nowrap">
             <div className="row portfolio-item-list">

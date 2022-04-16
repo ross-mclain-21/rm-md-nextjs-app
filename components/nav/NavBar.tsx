@@ -1,4 +1,4 @@
-import React, { MutableRefObject, useCallback, useEffect, useRef, useState } from 'react';
+import React, { MutableRefObject, useCallback, useContext, useEffect, useRef, useState } from 'react';
 import {
   Collapse,
   Container,
@@ -17,12 +17,14 @@ import { useUser } from '@auth0/nextjs-auth0';
 import PageLink from '../common/PageLink';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPowerOff, faUser } from '@fortawesome/free-solid-svg-icons';
+import GlobalContext from '../common/GlobalContext';
 
 const NavBar = ({ appRef }: { appRef: MutableRefObject<HTMLInputElement> }) => {
+  const { hasScrolled, setHasScrolled } = useContext(GlobalContext);
+
   const [isOpen, setIsOpen] = useState(false);
   const { user, isLoading } = useUser();
   const toggle = () => setIsOpen(!isOpen);
-  const [hasScrolled, setHasScrolled] = useState(false);
 
   // The scroll listener
   const handleScroll = useCallback(e => {
@@ -79,9 +81,9 @@ const NavBar = ({ appRef }: { appRef: MutableRefObject<HTMLInputElement> }) => {
                     <img
                       src={user.picture}
                       alt="Profile"
-                      className="nav-user-profile rounded-circle"
-                      width="50"
-                      height="50"
+                      className="nav-user-profile rounded-circle my-1"
+                      width="40"
+                      height="40"
                       data-testid="navbar-picture-desktop"
                     />
                   </DropdownToggle>
@@ -127,7 +129,7 @@ const NavBar = ({ appRef }: { appRef: MutableRefObject<HTMLInputElement> }) => {
                     <img
                       src={user.picture}
                       alt="Profile"
-                      className="nav-user-profile d-inline-block rounded-circle mr-3"
+                      className="nav-user-profile d-inline-block rounded-circle mr-3 my-1"
                       width="40"
                       height="40"
                       data-testid="navbar-picture-mobile"

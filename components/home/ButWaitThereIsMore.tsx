@@ -2,29 +2,34 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useContext, useEffect } from 'react';
 import TypeWriter from '../common/TypeWriter';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import { motion } from 'framer-motion';
-import { bounceTransition } from '../common/CommonAnimations';
+import { motion, useAnimation } from 'framer-motion';
+import { bounceTransition, serviceVariants } from '../common/CommonAnimations';
 import { scrollTo } from '../common/CommonFunctions';
 import GlobalContext from '../common/GlobalContext';
 
 function ButWaitThereIsMore() {
-  const { developRef } = useContext(GlobalContext);
+  const { developRef, hasScrolled } = useContext(GlobalContext);
+  const controls = useAnimation();
 
   let scrollToElement = () => {
-    console.log('SHIT');
+    scrollTo(developRef);
   };
 
   useEffect(() => {
-    scrollToElement = () => {
-      console.log('scrollTo ', developRef);
-
-      scrollTo(developRef);
-    };
-  }, [developRef]);
+    if (hasScrolled) {
+      controls.start('hidden');
+    } else {
+      controls.start('visible');
+    }
+  }, [controls, hasScrolled]);
 
   return (
     <div className="flex-fill d-flex flex-column justify-content-end">
-      <div className="d-flex flex-column align-items-center justify-content-center p-5">
+      <motion.div
+        animate={controls}
+        initial="visible"
+        variants={serviceVariants}
+        className="d-flex flex-column align-items-center justify-content-center p-5">
         <TypeWriter message={'WHAT I DO:'} classes="small code" typingSpeed={200} />
         <button
           className="btn btn-link"
@@ -39,7 +44,7 @@ function ButWaitThereIsMore() {
             <FontAwesomeIcon icon={faChevronDown} />
           </motion.h1>
         </button>
-      </div>
+      </motion.div>
     </div>
   );
 }

@@ -6,9 +6,17 @@
   @extend .btn-success;
   background-color: $coding-green-color;
   color: $background-color;
+  border-color: $coding-green-color;
+  
+  &:focus{
+    background-color: $coding-green-color-hover;
+    color: $background-color;
+
+  }
 
   &:hover {
     background-color: $coding-green-color-hover;
+    color: $background-color;
   }
 }
 

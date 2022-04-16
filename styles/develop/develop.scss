@@ -12,4 +12,31 @@
 
 .develop-container{
   font-family: PressStart2P, IBMPlexMono, serif;
+  
+  .services-container {
+    .code {
+      font-family: IBMPlexMono, serif;
+    }
+    
+    
+  }
+  
+  .skill-icon{
+    background-color: globals.$coding-green-color;
+    font-size: 4rem;
+    color: globals.$background-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    border-radius: 10px;
+    line-height: 1;
+    text-align: center;
+    margin:5px;
+    small{
+      font-size:1.5rem;
+      font-weight: bold;
+      font-style:italic;
+    }
+  }
 }

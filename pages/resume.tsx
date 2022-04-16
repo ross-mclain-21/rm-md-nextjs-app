@@ -46,7 +46,7 @@ function Resume() {
   return (
     <>
       <div className="container d-flex flex-column align-items-center justify-content-center ">
-        <div className="my-3">
+        <div className="my-5">
           <Document file={resumePath} onLoadSuccess={onDocumentLoadSuccess} className="">
             {windowDimensions.width < 300 ? (
               <Page pageNumber={pageNumber} scale={0.3} />
@@ -55,7 +55,7 @@ function Resume() {
             ) : windowDimensions.width < 1200 ? (
               <Page pageNumber={pageNumber} scale={0.9} />
             ) : (
-              <Page pageNumber={pageNumber} scale={0.9} />
+              <Page pageNumber={pageNumber} scale={1} />
             )}
           </Document>
           <div className="d-flex align-items-center justify-content-between flex-md-nowrap flex-wrap mt-4">

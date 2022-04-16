@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
       <Head>
         <title>McLain Development</title>
       </Head>
-      <main ref={appRef} id="app" className="d-flex flex-column h-100" data-testid="layout">
+      <main ref={appRef} id="app" className="d-flex flex-column h-100 pt-5" data-testid="layout">
         <NavBar appRef={appRef} />
         {children}
       </main>
