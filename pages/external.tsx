@@ -32,7 +32,7 @@ function External() {
   const { isLoading, response, error } = state;
 
   return (
-    <div className="container">
+    <div className="container mt-5">
       <div className="mb-5" data-testid="external">
         <h1 data-testid="external-title">External API</h1>
         <div data-testid="external-text">

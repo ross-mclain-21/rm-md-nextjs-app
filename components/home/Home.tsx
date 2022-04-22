@@ -13,7 +13,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div ref={homeRef} className={'vh-100 d-flex flex-column container justify-content-between'}>
+    <div ref={homeRef} className={'vh-100 d-flex flex-column container justify-content-between pt-5'}>
       <HomeHeader />
       <HomeDetail />
       <ButWaitThereIsMore />

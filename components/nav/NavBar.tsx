@@ -47,7 +47,7 @@ const NavBar = ({ appRef }: { appRef: MutableRefObject<HTMLInputElement> }) => {
       <Navbar className={`p-0 ${hasScrolled ? 'has-scrolled' : ''}`} expand="md" fixed="top">
         <Container className="px-0">
           <NavbarBrand className="logo me-0" />
-          <NavbarToggler onClick={toggle} className="mt-3" data-testid="navbar-toggle" />
+          <NavbarToggler onClick={toggle} className="my-3" data-testid="navbar-toggle" />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="me-auto pt-3" navbar data-testid="navbar-items">
               <PageLink href="/" className="mb-3 me-md-3" testId="navbar-home">
@@ -112,7 +112,7 @@ const NavBar = ({ appRef }: { appRef: MutableRefObject<HTMLInputElement> }) => {
               )}
             </Nav>
             {!isLoading && !user && (
-              <Nav className="d-md-none" navbar>
+              <Nav className="d-md-none  mb-md-0 mb-3" navbar>
                 <a href="/api/auth/login" className="" tabIndex={0} id="navbar-login-mobile">
                   Log in
                 </a>

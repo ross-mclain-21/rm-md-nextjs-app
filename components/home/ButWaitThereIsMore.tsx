@@ -14,14 +14,14 @@ function ButWaitThereIsMore() {
   let scrollToElement = () => {
     scrollTo(developRef);
   };
-
-  useEffect(() => {
-    if (hasScrolled) {
-      controls.start('hidden');
-    } else {
-      controls.start('visible');
-    }
-  }, [controls, hasScrolled]);
+  //
+  // useEffect(() => {
+  //   if (hasScrolled) {
+  //     controls.start('hidden');
+  //   } else {
+  //     controls.start('visible');
+  //   }
+  // }, [controls, hasScrolled]);
 
   return (
     <div className="flex-fill d-flex flex-column justify-content-end">

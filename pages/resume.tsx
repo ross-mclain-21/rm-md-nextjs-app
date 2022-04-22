@@ -45,7 +45,7 @@ function Resume() {
 
   return (
     <>
-      <div className="container d-flex flex-column align-items-center justify-content-center ">
+      <div className="container d-flex flex-column align-items-center justify-content-center mt-5">
         <div className="my-5">
           <Document file={resumePath} onLoadSuccess={onDocumentLoadSuccess} className="">
             {windowDimensions.width < 300 ? (

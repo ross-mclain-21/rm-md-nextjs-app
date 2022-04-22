@@ -10,7 +10,7 @@ function Profile() {
   const { user, isLoading } = useUser();
 
   return (
-    <div className="container">
+    <div className="container my-5">
       {isLoading && <Loading />}
       {user && (
         <>

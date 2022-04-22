@@ -43,7 +43,7 @@ export default function Create() {
   }, [controls, inView]);
 
   return (
-    <div className={'vh-100 d-flex flex-column '}>
+    <div className={'vh-100 d-flex flex-column services-container'}>
       <motion.div
         ref={ref}
         animate={controls}
@@ -53,7 +53,7 @@ export default function Create() {
         <h1 className={'me-3 mt-5'}>
           <span className={'code'}>I</span> <span>CREATE</span>
         </h1>
-        <div className="d-flex flex-column flex-fill justify-content-center services-container p-5">
+        <div className="d-flex flex-column flex-fill justify-content-center service-activities-container p-5">
           <button
             className="btn btn-link mt-auto"
             onClick={() => {
