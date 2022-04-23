@@ -50,18 +50,21 @@ const NavBar = ({ appRef }: { appRef: MutableRefObject<HTMLInputElement> }) => {
           <NavbarToggler onClick={toggle} className="my-3" data-testid="navbar-toggle" />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="me-auto pt-3" navbar data-testid="navbar-items">
-              <PageLink href="/" className="mb-3 me-md-3" testId="navbar-home">
+              <PageLink href="/" className="mb-3 me-md-4" testId="navbar-home">
                 Home
               </PageLink>
-              <PageLink href="/portfolio" className="mb-3 me-md-3" testId="navbar-portfolio">
+              <PageLink href="/portfolio" className="mb-3 me-md-4" testId="navbar-portfolio">
                 Portfolio
               </PageLink>
-              <PageLink href="/resume" className="mb-3 me-md-3" testId="navbar-resume">
+              <PageLink href="/services" className="mb-3 me-md-4" testId="navbar-services">
+                Services
+              </PageLink>
+              <PageLink href="/resume" className="mb-3 me-md-4" testId="navbar-resume">
                 Resume
               </PageLink>
               {user && (
                 <>
-                  <PageLink href="/external" className="mb-3 me-md-3" testId="navbar-csr">
+                  <PageLink href="/external" className="mb-3 me-md-4" testId="navbar-csr">
                     External Api Test
                   </PageLink>
                 </>

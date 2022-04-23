@@ -41,7 +41,7 @@ function PortfolioItem({ description, images = [], title, link, technologies, ty
                   transition={{ duration: 0.3 }}
                   className={
                     techIncluded
-                      ? 'badge border-dashed border-code-red text-code-red fw-bold rounded-pill ms-1 me-2 mb-2'
+                      ? 'badge border-dashed border-code text-code fw-bold rounded-pill ms-1 me-2 mb-2'
                       : 'badge border-dashed border-code-green border-1 text-code-green fw-light rounded-pill me-1 mb-2'
                   }>
                   {technology}

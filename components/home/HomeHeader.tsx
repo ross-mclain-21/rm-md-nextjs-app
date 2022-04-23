@@ -8,7 +8,7 @@ function HomeHeader() {
     <div className="d-flex flex-column align-items-center justify-content-end flex-fill">
       <div>
         <div className="">
-          <TypeWriter message={'WHO AM I:'} classes="small code" typingSpeed={200} />
+          <TypeWriter message={'WHO AM I:'} classes="small code" typingSpeed={50} />
         </div>
         <div className="d-flex align-items-center mb-3">
           {/*<FontAwesomeIcon icon={faChevronRight} className="header-chevron" />*/}

@@ -30,7 +30,7 @@ function ButWaitThereIsMore() {
         initial="visible"
         variants={serviceVariants}
         className="d-flex flex-column align-items-center justify-content-center p-5">
-        <TypeWriter message={'WHAT I DO:'} classes="small code" typingSpeed={200} />
+        <TypeWriter message={'MORE ABOUT ME:'} classes="small code" typingSpeed={50} />
         <button
           className="btn btn-link"
           onClick={() => {

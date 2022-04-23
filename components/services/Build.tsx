@@ -16,7 +16,7 @@ export default function Build() {
   }, [controls, inView]);
 
   return (
-    <div className={'vh-100 d-flex flex-column services-container'}>
+    <div className={'d-flex flex-column services-container'}>
       <motion.div
         ref={ref}
         animate={controls}

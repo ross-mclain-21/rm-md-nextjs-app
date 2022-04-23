@@ -13,7 +13,7 @@ function HomeDetail() {
       <div className="d-flex flex-column align-items-center">
         <div className="d-flex flex-column align-items-center">
           <div className="">
-            <TypeWriter message={'JOB TITLE:'} classes="small code" typingSpeed={200} />
+            <TypeWriter message={'JOB TITLE:'} classes="small code" typingSpeed={50} />
           </div>
           <HomeDetailListItem faIcon={faBriefcase} text={'Senior DevOps Engineer'} faClasses="fa-1x" />
           <div className="ms-4">
@@ -26,7 +26,7 @@ function HomeDetail() {
             />
           </div>
           <div className="mt-3">
-            <TypeWriter message={'HOW TO CONTACT ME:'} classes="small code" typingSpeed={200} />
+            <TypeWriter message={'HOW TO CONTACT ME:'} classes="small code" typingSpeed={50} />
           </div>
           <HomeDetailListItem
             faIcon={faEnvelope}

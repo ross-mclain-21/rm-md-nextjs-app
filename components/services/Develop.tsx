@@ -23,11 +23,8 @@ import Image from 'next/image';
 import TypeWriter from '../common/TypeWriter';
 
 export default function Develop() {
-  const { setDevelopRef } = useContext(GlobalContext);
-
   const controls = useAnimation();
   const [ref, inView] = useInView();
-  const developRef = useRef();
 
   useEffect(() => {
     if (inView) {
@@ -37,36 +34,28 @@ export default function Develop() {
     }
   }, [controls, inView]);
 
-  useEffect(() => {
-    setDevelopRef(developRef);
-  }, []);
-
   return (
-    <div ref={developRef} className={'d-flex flex-column services-container'}>
+    <div className={'d-flex flex-column services-container'}>
       <motion.div
         ref={ref}
         animate={controls}
         initial="hidden"
         variants={serviceVariants}
         className="d-flex flex-column container flex-fill pt-5 develop-container">
-        <h1 className={'me-3 mt-5'}>
+        <h1 className={'me-3 mt-5 mb-5'}>
           <span className={'code'}>I</span> <span>DEVELOP</span>
         </h1>
         <div className="d-flex flex-column flex-fill justify-content-center service-activities-container">
           <div className="mb-5">
             <TypeWriter message={'SERVICES I OFFER:'} classes="small code" typingSpeed={200} />
-            <div className="row mb-md-5 mt-3">
-              <div className="col-lg-6">
-                <button type="button" className="btn btn-code-green mb-3">
-                  <h2>Web Design & Development</h2>
-                </button>
-              </div>
-
-              <div className="col-lg-6">
-                <button type="button" className="btn btn-code-green mb-3">
-                  <h2>Support & Management</h2>
-                </button>
-              </div>
+            <div className="d-flex flex-column mb-md-5 mt-3">
+              <button type="button" className="btn btn-code-green mb-3 p-3 btn-block flex-fill d-flex flex-column ">
+                <h4 className="mb-2">Web Design & Development</h4>
+                <p className="text-start ff-plex-mono fw-bold">
+                  I am taking on development projects on a project by project basis! Please reach out via email if you
+                  have a web development project need, and I will review it and give an estimate of time and cost!
+                </p>
+              </button>
             </div>
           </div>
 

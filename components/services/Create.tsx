@@ -25,14 +25,8 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { scrollTo } from '../common/CommonFunctions';
 
 export default function Create() {
-  const { homeRef } = useContext(GlobalContext);
-
   const controls = useAnimation();
   const [ref, inView] = useInView();
-
-  let scrollToElement = () => {
-    scrollTo(homeRef);
-  };
 
   useEffect(() => {
     if (inView) {
@@ -43,25 +37,17 @@ export default function Create() {
   }, [controls, inView]);
 
   return (
-    <div className={'vh-100 d-flex flex-column services-container'}>
+    <div className={'d-flex flex-column services-container'}>
       <motion.div
         ref={ref}
         animate={controls}
         initial="hidden"
         variants={serviceVariants}
-        className="d-flex flex-column container flex-fill pt-5 build-container">
+        className="d-flex flex-column container flex-fill pt-5 create-container">
         <h1 className={'me-3 mt-5'}>
           <span className={'code'}>I</span> <span>CREATE</span>
         </h1>
-        <div className="d-flex flex-column flex-fill justify-content-center service-activities-container p-5">
-          <button
-            className="btn btn-link mt-auto"
-            onClick={() => {
-              scrollToElement();
-            }}>
-            <h5 className="mb-0">BACK TO TOP</h5>
-          </button>
-        </div>
+        <div className="d-flex flex-column flex-fill justify-content-center service-activities-container p-5"></div>
       </motion.div>
     </div>
   );

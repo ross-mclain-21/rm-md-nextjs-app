@@ -41,7 +41,7 @@ function PortfolioSkill({ name, slug, icon, prefix }: IPortfolioSkillInput) {
         ) : (
           <span className={`skill-icon skill-text ${skillSelected ? 'skill-selected' : ''}`}>{name}</span>
         )}
-        <small className={`${skillSelected ? 'text-code-red fw-bold' : ''}`}>{name}</small>
+        <small className={`${skillSelected ? 'text-code fw-bold' : ''}`}>{name}</small>
       </div>
     </motion.div>
   );

@@ -40,9 +40,9 @@
       color: globals.$coding-green-color-hover;
     }
     &.skill-selected {
-      color: globals.$coding-red-color;
+      color: globals.$coding-color;
       &:hover {
-        color: globals.$coding-red-color-hover;
+        opacity: 0.8;
       }
     }
     &.skill-text {

@@ -27,6 +27,31 @@
   min-width: 200px;
 }
 
+.about-me-icon{
+  font-size:10rem;
+}
+.about-me-skill-icon{
+  font-size: 7rem;
+}
+
+.about-me-skill-icon-text{
+  font-size:0.8rem;
+  font-family: PressStart2P, IBMPlexMono, serif;
+  color: globals.$background-color;
+  background-color: globals.$coding-green-color;
+  border-radius: 10px;
+  
+}
+
+.about-me-skill-icon-arrow{
+  font-size: 5rem;
+}
+
+.about-me-life-moment{
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
 @keyframes blink-animation {
   to {
     visibility: hidden;
