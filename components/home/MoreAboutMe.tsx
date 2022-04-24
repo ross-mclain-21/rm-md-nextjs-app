@@ -208,7 +208,8 @@ export default function MoreAboutMe() {
             <span className="about-me-skill-icon-text p-3 me-3 mb-3">Bootstrap</span>
             <span className="about-me-skill-icon-text p-3 me-3 mb-3">AWS</span>
             <span className="about-me-skill-icon-text p-3 me-3 mb-3">Terraform</span>
-            <span className="about-me-skill-icon-text p-3 me-3 mb-3">SCSS</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">SCSS</span>{' '}
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">Azure DevOps</span>
             <span className="about-me-skill-icon-text p-3 me-3 mb-3">SignalR</span>
           </div>
         </div>
@@ -227,6 +228,37 @@ export default function MoreAboutMe() {
               <li>Leading development and planning on multiple major applications.</li>
               <li>Helping to guide newer members on our team through any problems or challenges that came up.</li>
             </ul>
+            <p>
+              Since being promoted, the majority of my day to day has continued to be full-stack development with a
+              focus on solving user stories with dynamic user experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="row about-me-life-moment">
+        <div className="col-md-6 d-flex flex-column align-items-center justify-content-center">
+          <div className="px-3 d-flex align-items-center justify-content-center flex-wrap">
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">REACT</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">NEXT.JS</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">JavaScript</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">TypeScript</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">SCSS</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">Bootstrap</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">AWS</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">Postgres</span>
+          </div>
+        </div>
+        <div className="col-md-6 d-flex justify-content-center">
+          <div className="p-3">
+            <p className="code ff-press-start">2022</p>
+            <p>
+              In 2022, I have continued expanding my knowledge of full-stack technology and have become enthralled with
+              web development in React and subsequently Next.JS. The transition from imperative development with jQuery
+              to declarative development with React was a welcome one. I found that in my professional development, a
+              lot of the most valuable functionality was trying to mimic the component structure and state management
+              that react provides. I now have begun to develop all personal web applications in react and Next.JS and
+              plan to for the foreseeable future.
+            </p>
           </div>
         </div>
       </div>
