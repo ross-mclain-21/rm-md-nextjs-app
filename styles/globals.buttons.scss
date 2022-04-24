@@ -33,24 +33,32 @@
 }
 
 //custom buttons
-.btn-code-red {
-  @extend .btn-danger;
-  background-color: $coding-red-color;
+.btn-code{
+  @extend .btn-dark;
+  background-color: $coding-color;
   color: $background-color;
+  border-color: $coding-color;
+
+  &:focus{
+    background-color: $coding-color-hover;
+    color: $background-color;
+
+  }
 
   &:hover {
-    background-color: $coding-red-color-hover;
+    background-color: $coding-color-hover;
+    color: $background-color;
   }
 }
 
-.btn-outline-code-red {
-  @extend .btn-outline-danger;
-  border-color: $coding-red-color;
-  color: $coding-red-color;
+.btn-outline-code {
+  @extend .btn-outline-success;
+  border-color: $coding-color;
+  color: $coding-color;
   background-color: transparent;
 
   &:hover {
-    background-color: $coding-red-color;
+    background-color: $coding-color;
     color: $background-color !important;
   }
 }

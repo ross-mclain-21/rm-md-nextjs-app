@@ -3,19 +3,13 @@ import React, { useContext, useEffect, useRef } from 'react';
 import GlobalContext from '../common/GlobalContext';
 import {
   faArrowRight,
-  faBaby,
-  faBriefcase,
-  faChalkboard,
-  faChalkboardTeacher,
   faChild,
-  faCode,
   faFileCode,
   faGamepad,
   faGraduationCap,
-  faSchool,
-  faUserGraduate
+  faSchool
 } from '@fortawesome/free-solid-svg-icons';
-import { faCss3, faCss3Alt, faDev, faHtml5, faJs, faJsSquare, faUnity } from '@fortawesome/free-brands-svg-icons';
+import { faCss3Alt, faHtml5, faJsSquare, faUnity } from '@fortawesome/free-brands-svg-icons';
 
 export default function MoreAboutMe() {
   const { setDevelopRef } = useContext(GlobalContext);
@@ -52,7 +46,7 @@ export default function MoreAboutMe() {
       <div className="row about-me-life-moment">
         <div className="col-md-6 d-flex justify-content-center">
           <div className="p-3">
-            <FontAwesomeIcon icon={faSchool} className="about-me-skill-icon opacity-50" />
+            <FontAwesomeIcon icon={faSchool} className="about-me-skill-icon" />
           </div>
         </div>
         <div className="col-md-6 d-flex justify-content-center">
@@ -70,16 +64,6 @@ export default function MoreAboutMe() {
       </div>
       <div className="row about-me-life-moment">
         <div className="col-md-6 d-flex justify-content-center">
-          <div className="p-3 d-flex align-items-center flex-wrap opacity-50">
-            <FontAwesomeIcon icon={faHtml5} className="about-me-skill-icon p-3" />
-            <FontAwesomeIcon icon={faCss3Alt} className="about-me-skill-icon p-3" />
-            <FontAwesomeIcon icon={faJsSquare} className="about-me-skill-icon p-3" />
-            <FontAwesomeIcon icon={faArrowRight} className="about-me-skill-icon-arrow p-3" />
-
-            <FontAwesomeIcon icon={faFileCode} className="about-me-skill-icon p-3" />
-          </div>
-        </div>
-        <div className="col-md-6 d-flex justify-content-center">
           <div className="p-3">
             <p className="code ff-press-start">2016</p>
             <p>
@@ -90,15 +74,16 @@ export default function MoreAboutMe() {
             </p>
           </div>
         </div>
-      </div>
-      <div className="row about-me-life-moment">
+
         <div className="col-md-6 d-flex justify-content-center">
-          <div className="p-3 d-flex align-items-center flex-wrap opacity-50">
-            <FontAwesomeIcon icon={faUnity} className="about-me-skill-icon p-3" />
-            <FontAwesomeIcon icon={faArrowRight} className="about-me-skill-icon-arrow p-3" />
-            <FontAwesomeIcon icon={faGamepad} className="about-me-skill-icon p-3" />
+          <div className="p-3 d-flex align-items-center flex-wrap">
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">HTML</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">JS</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">CSS</span>
           </div>
         </div>
+      </div>
+      <div className="row about-me-life-moment">
         <div className="col-md-6 d-flex justify-content-center">
           <div className="p-3">
             <p className="code ff-press-start">2016</p>
@@ -116,17 +101,16 @@ export default function MoreAboutMe() {
             </p>
           </div>
         </div>
+        <div className="col-md-6 d-flex justify-content-center">
+          <div className="p-3 d-flex align-items-center flex-wrap">
+            <FontAwesomeIcon icon={faUnity} className="about-me-skill-icon p-3" />
+            <FontAwesomeIcon icon={faArrowRight} className="about-me-skill-icon-arrow p-3" />
+            <FontAwesomeIcon icon={faGamepad} className="about-me-skill-icon p-3" />
+          </div>
+        </div>
       </div>
 
       <div className="row about-me-life-moment">
-        <div className="col-md-6 d-flex flex-column align-items-center justify-content-center">
-          <div className="px-3 d-flex align-items-center flex-wrap opacity-50">
-            <span className="about-me-skill-icon-text p-3 me-3 mb-3">C#</span>
-            <span className="about-me-skill-icon-text p-3 me-3 mb-3">ASP.NET</span>
-            <span className="about-me-skill-icon-text p-3 me-3 mb-3">jQuery</span>{' '}
-            <span className="about-me-skill-icon-text p-3 me-3 mb-3">Bootstrap</span>
-          </div>
-        </div>
         <div className="col-md-6 d-flex justify-content-center">
           <div className="p-3">
             <p className="code ff-press-start">2017</p>
@@ -139,6 +123,15 @@ export default function MoreAboutMe() {
               as a Software Development Intern. During that first year, I designed and developed multiple web
               applications that helped to improve the daily workload of Tyler's Hosting Services team.
             </p>
+          </div>
+        </div>
+        <div className="col-md-6 d-flex flex-column align-items-center justify-content-center">
+          <div className="px-3 d-flex align-items-center flex-wrap">
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">C#</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">CSHTML</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">ASP.NET</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">jQuery</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">Bootstrap</span>
           </div>
         </div>
       </div>
@@ -162,22 +155,6 @@ export default function MoreAboutMe() {
         </div>
       </div>
       <div className="row about-me-life-moment">
-        <div className="col-md-6 d-flex flex-column align-items-center justify-content-center">
-          <div className="px-3 d-flex align-items-center justify-content-center flex-wrap opacity-50">
-            <span className="about-me-skill-icon-text p-3 me-3 mb-3">C#</span>
-            <span className="about-me-skill-icon-text p-3 me-3 mb-3">.NET CORE</span>
-            <span className="about-me-skill-icon-text p-3 me-3 mb-3">jQuery</span>
-            <span className="about-me-skill-icon-text p-3 me-3 mb-3">RabbitMq</span>
-            <span className="about-me-skill-icon-text p-3 me-3 mb-3">GraphQL</span>
-            <span className="about-me-skill-icon-text p-3 me-3 mb-3">Kubernetes</span>
-            <span className="about-me-skill-icon-text p-3 me-3 mb-3">Elastic Search</span>
-            <span className="about-me-skill-icon-text p-3 me-3 mb-3">MSSQL</span>
-            <span className="about-me-skill-icon-text p-3 me-3 mb-3">Entity Framework</span>
-            <span className="about-me-skill-icon-text p-3 me-3 mb-3">Bootstrap</span>
-            <span className="about-me-skill-icon-text p-3 me-3 mb-3">Azure DevOps</span>
-            <span className="about-me-skill-icon-text p-3 me-3 mb-3">SignalR</span>
-          </div>
-        </div>
         <div className="col-md-6 d-flex justify-content-center">
           <div className="p-3">
             <p className="code ff-press-start">2018</p>
@@ -194,25 +171,25 @@ export default function MoreAboutMe() {
             </p>
           </div>
         </div>
-      </div>
-      <div className="row about-me-life-moment">
         <div className="col-md-6 d-flex flex-column align-items-center justify-content-center">
-          <div className="px-3 d-flex align-items-center justify-content-center flex-wrap opacity-50">
+          <div className="px-3 d-flex align-items-center justify-content-center flex-wrap">
             <span className="about-me-skill-icon-text p-3 me-3 mb-3">C#</span>
-            <span className="about-me-skill-icon-text p-3 me-3 mb-3">.NET 6.0</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">CSHTML</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">.NET CORE</span>
             <span className="about-me-skill-icon-text p-3 me-3 mb-3">jQuery</span>
             <span className="about-me-skill-icon-text p-3 me-3 mb-3">RabbitMq</span>
             <span className="about-me-skill-icon-text p-3 me-3 mb-3">GraphQL</span>
             <span className="about-me-skill-icon-text p-3 me-3 mb-3">Kubernetes</span>
-            <span className="about-me-skill-icon-text p-3 me-3 mb-3">PostgreSQL</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">Elastic Search</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">MSSQL</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">Entity Framework</span>
             <span className="about-me-skill-icon-text p-3 me-3 mb-3">Bootstrap</span>
-            <span className="about-me-skill-icon-text p-3 me-3 mb-3">AWS</span>
-            <span className="about-me-skill-icon-text p-3 me-3 mb-3">Terraform</span>
-            <span className="about-me-skill-icon-text p-3 me-3 mb-3">SCSS</span>{' '}
             <span className="about-me-skill-icon-text p-3 me-3 mb-3">Azure DevOps</span>
             <span className="about-me-skill-icon-text p-3 me-3 mb-3">SignalR</span>
           </div>
         </div>
+      </div>
+      <div className="row about-me-life-moment">
         <div className="col-md-6 d-flex justify-content-center">
           <div className="p-3">
             <p className="code ff-press-start">2021</p>
@@ -234,23 +211,30 @@ export default function MoreAboutMe() {
             </p>
           </div>
         </div>
-      </div>
-      <div className="row about-me-life-moment">
         <div className="col-md-6 d-flex flex-column align-items-center justify-content-center">
           <div className="px-3 d-flex align-items-center justify-content-center flex-wrap">
-            <span className="about-me-skill-icon-text p-3 me-3 mb-3">REACT</span>
-            <span className="about-me-skill-icon-text p-3 me-3 mb-3">NEXT.JS</span>
-            <span className="about-me-skill-icon-text p-3 me-3 mb-3">JavaScript</span>
-            <span className="about-me-skill-icon-text p-3 me-3 mb-3">TypeScript</span>
-            <span className="about-me-skill-icon-text p-3 me-3 mb-3">SCSS</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">C#</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">CSHTML</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">.NET 6.0</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">jQuery</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">RabbitMq</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">GraphQL</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">Kubernetes</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">PostgreSQL</span>
             <span className="about-me-skill-icon-text p-3 me-3 mb-3">Bootstrap</span>
             <span className="about-me-skill-icon-text p-3 me-3 mb-3">AWS</span>
-            <span className="about-me-skill-icon-text p-3 me-3 mb-3">Postgres</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">Terraform</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">SCSS</span>{' '}
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">Azure DevOps</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">SignalR</span>
           </div>
         </div>
+      </div>
+      <div className="row about-me-life-moment">
         <div className="col-md-6 d-flex justify-content-center">
           <div className="p-3">
             <p className="code ff-press-start">2022</p>
+            <p className="code ff-press-start">Current Personal Progression</p>
             <p>
               In 2022, I have continued expanding my knowledge of full-stack technology and have become enthralled with
               web development in React and subsequently Next.JS. The transition from imperative development with jQuery
@@ -259,6 +243,19 @@ export default function MoreAboutMe() {
               that react provides. I now have begun to develop all personal web applications in react and Next.JS and
               plan to for the foreseeable future.
             </p>
+          </div>
+        </div>
+        <div className="col-md-6 d-flex flex-column align-items-center justify-content-center">
+          <div className="px-3 d-flex align-items-center justify-content-center flex-wrap">
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">REACT</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">TSX</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">NEXT.JS</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">JavaScript</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">TypeScript</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">SCSS</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">Bootstrap</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">AWS</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">Postgres</span>
           </div>
         </div>
       </div>

@@ -23,7 +23,7 @@ export default function Index() {
           onClick={() => {
             scrollToElement();
           }}>
-          <h5 className="mb-0">BACK TO TOP</h5>
+          <h5 className="mb-5">BACK TO TOP</h5>
         </button>
       </div>
     </div>

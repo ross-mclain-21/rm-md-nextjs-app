@@ -41,6 +41,9 @@ function Resume() {
     window.addEventListener('resize', handleResize);
 
     handleResize();
+    return () => {
+      setWindowDimensions({ width: 0, height: 0 }); // This worked for me
+    };
   }, []);
 
   return (

@@ -62,12 +62,14 @@ const NavBar = ({ appRef }: { appRef: MutableRefObject<HTMLInputElement> }) => {
               <PageLink href="/resume" className="mb-3 me-md-4" testId="navbar-resume">
                 Resume
               </PageLink>
-              {user && (
+              {user && (user['https://api.mclaindevelopment.com/roles'] as string[]).includes('Owner') ? (
                 <>
-                  <PageLink href="/external" className="mb-3 me-md-4" testId="navbar-csr">
+                  <PageLink href="/external" className="mb-3 me-md-4 code" testId="navbar-csr">
                     External Api Test
                   </PageLink>
                 </>
+              ) : (
+                <></>
               )}
             </Nav>
             <Nav className="d-none d-md-block" navbar>

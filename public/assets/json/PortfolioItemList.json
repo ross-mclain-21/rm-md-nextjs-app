@@ -1,8 +1,21 @@
 ﻿[
   {
+    "title": "Cup o' tal",
+    "description": "A website I am currently developing that will be used for a friend's new coffee shop. This is an example of using CMS to allow the customer to keep the data up to date as they need without waiting for me to make any changes.",
+    "technologies": ["HTML", "CSS", "JS", "TS", "React", "SCSS", "Node","Next.JS","CMS"],
+    "type": "WEBSITE",
+    "year": 2022,
+    "images": [
+      {
+        "src": "/assets/images/portfolio/Cupotal/cupotal.png",
+        "alt": "Cupotal Landing Page"
+      }
+    ]
+  },
+  {
     "title": "This.Website",
-    "description": "This is my newest application and a replacement for my previous personal website. I have worked on a few react apps but this is the first time I have delved into fully building it myself from the ground up. I have built it on top of ASP.Net Core and have it deploying automatically from github, using github actions, to digital ocean using docker.",
-    "technologies": ["HTML", "CSS", "JS", "TS", "React", "SCSS", "Node"],
+    "description": "This is my replacement for my previous personal website. I have worked on a few react apps but this is the first time I have delved into fully building it myself from the ground up. I have built it with Next.JS and am deploying it with Vercel currently but plan to migrate to netlify.",
+    "technologies": ["HTML", "CSS", "JS", "TS", "React", "SCSS", "Node","Next.JS"],
     "type": "WEBSITE",
     "year": 2021,
     "images": [

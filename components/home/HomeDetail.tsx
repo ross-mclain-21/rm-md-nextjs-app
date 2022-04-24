@@ -1,11 +1,10 @@
 import React from 'react';
 
 import HomeDetailListItem from './HomeDetailListItem';
-import { faAt, faBriefcase, faEnvelope, faHashtag } from '@fortawesome/free-solid-svg-icons';
+import { faAt, faBriefcase, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { motion } from 'framer-motion';
-import Link from 'next/link';
 import TypeWriter from '../common/TypeWriter';
+import PageLink from '../common/PageLink';
 
 function HomeDetail() {
   return (
@@ -35,15 +34,6 @@ function HomeDetail() {
             isLink={true}
             link="mailto:mclain.development@gmail.com"
           />
-
-          {/*<HomeDetailListItem*/}
-          {/*  faIcon={faHashtag}*/}
-          {/*  text={'1 (207) 420-6255'}*/}
-          {/*  faClasses="fa-1x"*/}
-          {/*  isLink={true}*/}
-          {/*  link="tel:12074206255"*/}
-          {/*/>*/}
-
           <HomeDetailListItem
             faIcon={faGithub}
             text={'ross-mclain-21'}
@@ -59,21 +49,10 @@ function HomeDetail() {
             link="https://www.linkedin.com/in/rossmclain21"
           />
         </div>
+        <PageLink href="/services" className="btn btn-code-green ff-press-start btn-sm mt-5 d-flex flex-column">
+          <span>Let me build</span> <span>your next website!</span>
+        </PageLink>
       </div>
-      {/*<motion.div*/}
-      {/*  initial={{ opacity: 0 }}*/}
-      {/*  animate={{ opacity: 1 }}*/}
-      {/*  transition={{ duration: 1 }}*/}
-      {/*  className="col-md-6 d-flex flex-column align-items-center pt-md-2 pt-4">*/}
-      {/*  <div className="d-flex flex-column">*/}
-      {/*    <Link href={'/portfolio'}>*/}
-      {/*      <span className="btn btn-outline-code-green home-detail-btn mb-3">Portfolio</span>*/}
-      {/*    </Link>*/}
-      {/*    <Link href={'/resume'}>*/}
-      {/*      <span className="btn btn-outline-code-green home-detail-btn mb-3">Resume</span>*/}
-      {/*    </Link>*/}
-      {/*  </div>*/}
-      {/*</motion.div>*/}
     </div>
   );
 }

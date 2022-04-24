@@ -83,9 +83,6 @@ a,.btn-link {
 .border-code-green {
   border-color: $coding-green-color;
 }
-.border-code-red {
-  border-color: $coding-red-color;
-}
 .border-code {
   border-color: $coding-color;
 }
@@ -101,14 +98,12 @@ a,.btn-link {
   color: $background-color;
 }
 
-.bg-code-red {
-  background-color: $coding-red-color;
-  color: $background-color;
-}
-
 //text
 .text-code{
   color:$code-color;
+}
+.text-code-green{
+  color:$coding-green-color;
 }
 
 //font-family
@@ -138,6 +133,4 @@ a,.btn-link {
 @import "./home/home";
 @import "./resume/resume";
 @import "./portfolio/portfolio";
-@import "./develop/develop";
-@import "./build/build";
-@import "./create/create";
+@import "./services/services";
