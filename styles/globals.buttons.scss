@@ -1,6 +1,18 @@
 @import 'globals.variables';
 @import '../node_modules/bootstrap/scss/buttons';
 
+
+.btn-success:hover, .btn-success:focus{
+  background-color: rgb(98 227 93);
+  border-color: rgb(98 227 93);
+}
+
+
+
+
+
+
+
 //custom buttons
 .btn-code-green {
   @extend .btn-success;

@@ -53,12 +53,19 @@ export default function Services() {
               </p>
             </div>
           </div>
+          <div className="d-flex align-items-center justify-content-center">
+            <a
+              href="mailto:mclain.development@gmail.com?subject=New Website Project Estimate!"
+              className="btn btn-success btn-lg ff-press-start mt-auto">
+              Get An Estimate!
+            </a>
+          </div>
 
-          <TypeWriter message={'SERVICES I OFFER:'} classes="small code mb-2" typingSpeed={50} />
+          <TypeWriter message={'SERVICES I OFFER:'} classes="small mt-4" typingSpeed={50} />
           <div className="row mb-3">
             <div className="col-lg-4 mb-3 d-flex flex-column">
               <div className="d-flex align-items-center justify-content-center p-3">
-                <FontAwesomeIcon icon={faDollarSign} className="text-code fst-italic h1 mb-0" />
+                <FontAwesomeIcon icon={faDollarSign} className="text-success fst-italic h1 mb-0" />
               </div>
               <div className="card bg-code-green d-flex flex-column flex-fill">
                 <div className="card-title px-3 pt-3 pb-0 mb-0">
@@ -74,18 +81,13 @@ export default function Services() {
                     I will provide an estimate of time and cost.
                   </p>
                   <p>Once we come to an agreement, I will develop and deploy the application and do a handoff.</p>
-                  <a
-                    href="mailto:mclain.development@gmail.com?subject=Static Site Estimate Inquiry"
-                    className="btn btn-code btn-sm ff-press-start mt-auto">
-                    Get An Estimate!
-                  </a>
                 </div>
               </div>
             </div>
             <div className="col-lg-4 mb-3 d-flex flex-column">
               <div className="d-flex align-items-center justify-content-center p-3">
-                <FontAwesomeIcon icon={faDollarSign} className="text-code fst-italic h1 mb-0" />
-                <FontAwesomeIcon icon={faDollarSign} className="text-code fst-italic h1 mb-0" />
+                <FontAwesomeIcon icon={faDollarSign} className="text-success fst-italic h1 mb-0" />
+                <FontAwesomeIcon icon={faDollarSign} className="text-success fst-italic h1 mb-0" />
               </div>
               <div className="card bg-code-green d-flex flex-column flex-fill">
                 <div className="card-title px-3 pt-3 pb-0 mb-0">
@@ -105,19 +107,14 @@ export default function Services() {
                     The teaching and understanding of the Content Management Software will be included in the handoff of
                     the website.
                   </p>
-                  <a
-                    href="mailto:mclain.development@gmail.com?subject=Dynamic Site Estimate Inquiry"
-                    className="btn btn-code btn-sm ff-press-start mt-auto">
-                    Get An Estimate!
-                  </a>
                 </div>
               </div>
             </div>
             <div className="col-lg-4 mb-3 d-flex flex-column">
               <div className="d-flex align-items-center justify-content-center p-3">
-                <FontAwesomeIcon icon={faDollarSign} className="text-code fst-italic h1 mb-0" />
-                <FontAwesomeIcon icon={faDollarSign} className="text-code fst-italic h1 mb-0" />
-                <FontAwesomeIcon icon={faDollarSign} className="text-code fst-italic h1 mb-0" />
+                <FontAwesomeIcon icon={faDollarSign} className="text-success fst-italic h1 mb-0" />
+                <FontAwesomeIcon icon={faDollarSign} className="text-success fst-italic h1 mb-0" />
+                <FontAwesomeIcon icon={faDollarSign} className="text-success fst-italic h1 mb-0" />
               </div>
               <div className="card bg-code-green d-flex flex-column flex-fill">
                 <div className="card-title px-3 pt-3 pb-0 mb-0">
@@ -137,11 +134,6 @@ export default function Services() {
                     </li>
                     <li>Anything you can think of!</li>
                   </ul>
-                  <a
-                    href="mailto:mclain.development@gmail.com?subject=Custom Site Estimate Inquiry!"
-                    className="btn btn-code btn-sm ff-press-start mt-auto">
-                    Get An Estimate!
-                  </a>
                 </div>
               </div>
             </div>

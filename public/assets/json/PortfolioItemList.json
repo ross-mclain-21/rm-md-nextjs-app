@@ -27,7 +27,6 @@
   },
   {
     "title": "Job Estimator",
-    "link": "http://www.jobestimator.mclain.de",
     "description": "I created this website for my dad to enable him to build out and track job estimates from the ground up. It allows for work items to be defined with an average time requirement and also allows for overrides when unexpected circumstances arise.",
     "technologies": [
       "HTML",
@@ -96,7 +95,6 @@
   },
   {
     "title": "Celebration At Theos",
-    "link": "https://www.mclain.de/CelebrationAtTheos/CelebrationAtTheos/Index",
     "description": "My friends and I entered into a 48 hour game jam with the theme of celebration. We ended up coming up with this idea for a cat trying to gather items for a party with their fellow cat friends. Theo the cat has to avoid his owners while grabbing everything and bringing it to his cat bed in preparation for the party.",
     "technologies": ["C#", "Unity"],
     "type": "VIDEO GAME",
@@ -110,7 +108,6 @@
   },
   {
     "title": "Ninja Runner",
-    "link": "https://www.mclain.de/NinjaRunner/NinjaRunner/Index",
     "description": "This is a small, mobile friendly game I developed during my internship at the CI2 lab. The user has to dodge the incoming bouncing balls to keep their life above 0 for as long as possible. If they allow the green balls to hit them, they will gain health back.",
     "technologies": ["C#", "Unity"],
     "type": "VIDEO GAME",
@@ -124,7 +121,6 @@
   },
   {
     "title": "King and Country",
-    "link": "https://www.mclain.de/KingCountry/KingCountry/Index",
     "description": "During an internship at the CI2 lab on the USM campus while attending college, I built this little medieval simulation game. It is a top down view of a group of settlers who require direction. You are able to command them to: build structures, cut down trees, hunt and much more all while they have a need for sleep, water, and hunger. This is where I learned so much about C# and Unity, and was how I was able to launch myself into ASP.Net at Tyler Technologies.",
     "technologies": ["C#", "Unity"],
     "type": "VIDEO GAME",
