@@ -39,7 +39,9 @@
   background-color: transparent;
 
   &:hover {
+    border-color: $coding-green-color;
     background-color: $coding-green-color;
+    
     color: $background-color !important;
   }
 }

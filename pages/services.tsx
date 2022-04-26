@@ -56,7 +56,7 @@ export default function Services() {
           <div className="d-flex align-items-center justify-content-center">
             <a
               href="mailto:mclain.development@gmail.com?subject=New Website Project Estimate!"
-              className="btn btn-success btn-lg ff-press-start mt-auto">
+              className="btn btn-outline-code-green btn-lg ff-press-start mt-auto">
               Get An Estimate!
             </a>
           </div>
@@ -64,12 +64,10 @@ export default function Services() {
           <TypeWriter message={'SERVICES I OFFER:'} classes="small mt-4" typingSpeed={50} />
           <div className="row mb-3">
             <div className="col-lg-4 mb-3 d-flex flex-column">
-              <div className="d-flex align-items-center justify-content-center p-3">
-                <FontAwesomeIcon icon={faDollarSign} className="text-success fst-italic h1 mb-0" />
-              </div>
               <div className="card bg-code-green d-flex flex-column flex-fill">
-                <div className="card-title px-3 pt-3 pb-0 mb-0">
-                  <p className="mb-0 fw-bold">Static Site</p>
+                <div className="card-title px-3 pt-3 pb-0 mb-0 d-flex align-items-center justify-content-between">
+                  <p className="mb-0 me-3 fw-bold">Static Site</p>
+                  <FontAwesomeIcon icon={faDollarSign} className="text-background fst-italic h2 mb-0 ms-auto" />
                 </div>
                 <div className="card-body ff-plex-mono d-flex flex-column flex-fill">
                   <p>
@@ -85,13 +83,11 @@ export default function Services() {
               </div>
             </div>
             <div className="col-lg-4 mb-3 d-flex flex-column">
-              <div className="d-flex align-items-center justify-content-center p-3">
-                <FontAwesomeIcon icon={faDollarSign} className="text-success fst-italic h1 mb-0" />
-                <FontAwesomeIcon icon={faDollarSign} className="text-success fst-italic h1 mb-0" />
-              </div>
               <div className="card bg-code-green d-flex flex-column flex-fill">
-                <div className="card-title px-3 pt-3 pb-0 mb-0">
-                  <p className="mb-0 fw-bold">Dynamic Site</p>
+                <div className="card-title px-3 pt-3 pb-0 mb-0 d-flex align-items-center justify-content-between">
+                  <p className="mb-0 me-3 fw-bold">Dynamic Site</p>
+                  <FontAwesomeIcon icon={faDollarSign} className="text-background fst-italic h2 mb-0 ms-auto" />
+                  <FontAwesomeIcon icon={faDollarSign} className="text-background fst-italic h2 mb-0" />
                 </div>
                 <div className="card-body ff-plex-mono d-flex flex-column flex-fill">
                   <p>
@@ -111,14 +107,12 @@ export default function Services() {
               </div>
             </div>
             <div className="col-lg-4 mb-3 d-flex flex-column">
-              <div className="d-flex align-items-center justify-content-center p-3">
-                <FontAwesomeIcon icon={faDollarSign} className="text-success fst-italic h1 mb-0" />
-                <FontAwesomeIcon icon={faDollarSign} className="text-success fst-italic h1 mb-0" />
-                <FontAwesomeIcon icon={faDollarSign} className="text-success fst-italic h1 mb-0" />
-              </div>
               <div className="card bg-code-green d-flex flex-column flex-fill">
-                <div className="card-title px-3 pt-3 pb-0 mb-0">
-                  <p className="mb-0 fw-bold">Custom Site</p>
+                <div className="card-title px-3 pt-3 pb-0 mb-0 d-flex align-items-center justify-content-between">
+                  <p className="mb-0 me-3 fw-bold">Custom Site</p>
+                  <FontAwesomeIcon icon={faDollarSign} className="text-background fst-italic h2 mb-0 ms-auto" />
+                  <FontAwesomeIcon icon={faDollarSign} className="text-background fst-italic h2 mb-0" />
+                  <FontAwesomeIcon icon={faDollarSign} className="text-background fst-italic h2 mb-0" />
                 </div>
                 <div className="card-body ff-plex-mono d-flex flex-column flex-fill">
                   <p>
