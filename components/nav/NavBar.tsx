@@ -18,9 +18,11 @@ import PageLink from '../common/PageLink';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPowerOff, faUser } from '@fortawesome/free-solid-svg-icons';
 import GlobalContext from '../common/GlobalContext';
+import { useRouter } from 'next/router';
 
 const NavBar = ({ appRef }: { appRef: MutableRefObject<HTMLInputElement> }) => {
   const { hasScrolled, setHasScrolled } = useContext(GlobalContext);
+  const router = useRouter();
 
   const [isOpen, setIsOpen] = useState(false);
   const { user, isLoading } = useUser();
@@ -50,21 +52,36 @@ const NavBar = ({ appRef }: { appRef: MutableRefObject<HTMLInputElement> }) => {
           <NavbarToggler onClick={toggle} className="my-3" data-testid="navbar-toggle" />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="me-auto pt-3" navbar data-testid="navbar-items">
-              <PageLink href="/" className="mb-3 me-md-4" testId="navbar-home">
+              <PageLink
+                href="/"
+                className={`mb-3 me-md-4 ${router.pathname == '/' ? 'selected-pagelink' : ''}`}
+                testId="navbar-home">
                 Home
               </PageLink>
-              <PageLink href="/services" className="mb-3 me-md-4" testId="navbar-services">
+              <PageLink
+                href="/services"
+                className={`mb-3 me-md-4 ${router.pathname == '/services' ? 'selected-pagelink' : ''}`}
+                testId="navbar-services">
                 Services
               </PageLink>
-              <PageLink href="/portfolio" className="mb-3 me-md-4" testId="navbar-portfolio">
+              <PageLink
+                href="/portfolio"
+                className={`mb-3 me-md-4 ${router.pathname == '/portfolio' ? 'selected-pagelink' : ''}`}
+                testId="navbar-portfolio">
                 Portfolio
               </PageLink>
-              <PageLink href="/resume" className="mb-3 me-md-4" testId="navbar-resume">
+              <PageLink
+                href="/resume"
+                className={`mb-3 me-md-4 ${router.pathname == '/resume' ? 'selected-pagelink' : ''}`}
+                testId="navbar-resume">
                 Resume
               </PageLink>
               {user && (user['https://api.mclaindevelopment.com/roles'] as string[]).includes('Owner') ? (
                 <>
-                  <PageLink href="/external" className="mb-3 me-md-4 code" testId="navbar-csr">
+                  <PageLink
+                    href="/external"
+                    className={`mb-3 me-md-4 ${router.pathname == '/external' ? 'selected-pagelink' : ''}`}
+                    testId="navbar-csr">
                     External Api Test
                   </PageLink>
                 </>

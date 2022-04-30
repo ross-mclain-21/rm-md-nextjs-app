@@ -23,6 +23,7 @@ function Resume() {
       console.error(e);
     }
   }
+
   const [windowDimensions, setWindowDimensions] = useState({ width: 0, height: 0 });
 
   useEffect(() => {
