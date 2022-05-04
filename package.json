@@ -7,13 +7,7 @@
     "dev:api": "nodemon api-server",
     "build": "next build",
     "start": "concurrently \"next start\" \"node api-server\"",
-    "start:api": "node api-server",
-    "test": "jest tests --coverage --maxWorkers=10",
-    "test:watch": "jest --coverage --watch",
-    "test:integration": "start-server-and-test start http-get://localhost:3000 cypress:run",
-    "test:integration:watch": "start-server-and-test start http-get://localhost:3000 cypress:open",
-    "cypress:run": "cypress run",
-    "cypress:open": "cypress open"
+    "start:api": "node api-server"
   },
   "prisma": {
     "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
