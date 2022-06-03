@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PageLink from '../components/common/PageLink';
 import React from 'react';
 
-export default function Custom404() {
+const Custom404 = () => {
   return (
     <div className="flex-fill d-flex align-items-center justify-content-center">
       <div className="row">
@@ -23,4 +23,6 @@ export default function Custom404() {
       </div>
     </div>
   );
-}
+};
+
+export default Custom404;

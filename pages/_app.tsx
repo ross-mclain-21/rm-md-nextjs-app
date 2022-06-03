@@ -13,7 +13,7 @@ import { useRouter } from 'next/router';
 
 initFontAwesome();
 
-export default function App({ Component, pageProps }: AppProps) {
+const App = ({ Component, pageProps }: AppProps) => {
   const [homeRef, setHomeRef] = useState<RefObject<any>>(null);
   const [developRef, setDevelopRef] = useState<RefObject<any>>(null);
   const [hasScrolled, setHasScrolled] = useState(false);
@@ -43,4 +43,5 @@ export default function App({ Component, pageProps }: AppProps) {
       </GlobalContext.Provider>
     </UserProvider>
   );
-}
+};
+export default App;

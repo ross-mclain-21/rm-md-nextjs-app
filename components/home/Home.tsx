@@ -4,7 +4,7 @@ import React, { useContext, useEffect, useRef } from 'react';
 import ButWaitThereIsMore from './ButWaitThereIsMore';
 import GlobalContext from '../common/GlobalContext';
 
-export default function Home() {
+const Home = () => {
   const { setHomeRef } = useContext(GlobalContext);
   const homeRef = useRef();
 
@@ -19,4 +19,6 @@ export default function Home() {
       <ButWaitThereIsMore />
     </div>
   );
-}
+};
+
+export default Home;

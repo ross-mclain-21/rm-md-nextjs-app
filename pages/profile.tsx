@@ -6,7 +6,7 @@ import Loading from '../components/common/Loading';
 import ErrorMessage from '../components/common/ErrorMessage';
 import Highlight from '../components/common/Highlight';
 
-function Profile() {
+const Profile = () => {
   const { user, isLoading } = useUser();
 
   return (
@@ -37,7 +37,7 @@ function Profile() {
       )}
     </div>
   );
-}
+};
 
 export default withPageAuthRequired(Profile, {
   onRedirecting: () => <Loading />,

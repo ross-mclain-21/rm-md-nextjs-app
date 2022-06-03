@@ -5,7 +5,7 @@ import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
 
 import { pdfjs, Document, Page } from 'react-pdf';
 
-function Resume() {
+const Resume = () => {
   const [numPages, setNumPages] = useState(0);
   const [pageNumber, setPageNumber] = useState(1);
 
@@ -16,28 +16,28 @@ function Resume() {
 
   pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-  function onDocumentLoadSuccess(pdf: SetStateAction<any>) {
+  const onDocumentLoadSuccess = (pdf: SetStateAction<any>) => {
     try {
       setNumPages(pdf._pdfInfo.numPages);
     } catch (e) {
       console.error(e);
     }
-  }
+  };
 
   const [windowDimensions, setWindowDimensions] = useState({ width: 0, height: 0 });
 
   useEffect(() => {
-    function getWindowDimensions() {
+    const getWindowDimensions = () => {
       const { innerWidth: width, innerHeight: height } = window;
       return {
         width,
         height
       };
-    }
+    };
 
-    function handleResize() {
+    const handleResize = () => {
       setWindowDimensions(getWindowDimensions());
-    }
+    };
 
     window.addEventListener('resize', handleResize);
 
@@ -73,6 +73,6 @@ function Resume() {
       </div>
     </>
   );
-}
+};
 
 export default Resume;
