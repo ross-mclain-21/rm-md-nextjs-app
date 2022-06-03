@@ -3,7 +3,7 @@ import { Image, IPortfolioItemInput } from '../common/CommonInterfaces';
 import PortfolioContext from './PortfolioContext';
 import { motion } from 'framer-motion';
 
-function PortfolioItem({ description, images = [], title, link, technologies, type, year }: IPortfolioItemInput) {
+const PortfolioItem = ({ description, images = [], title, link, technologies, type, year }: IPortfolioItemInput) => {
   const { selectedTechnologies } = useContext(PortfolioContext);
 
   return (
@@ -71,6 +71,6 @@ function PortfolioItem({ description, images = [], title, link, technologies, ty
       </div>
     </motion.div>
   );
-}
+};
 
 export default PortfolioItem;

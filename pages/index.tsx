@@ -6,7 +6,7 @@ import { scrollTo } from '../components/common/CommonFunctions';
 import GlobalContext from '../components/common/GlobalContext';
 import MoreAboutMe from '../components/home/MoreAboutMe';
 
-export default function Index() {
+const Index = () => {
   const { homeRef } = useContext(GlobalContext);
 
   let scrollToElement = () => {
@@ -28,4 +28,5 @@ export default function Index() {
       </div>
     </div>
   );
-}
+};
+export default Index;

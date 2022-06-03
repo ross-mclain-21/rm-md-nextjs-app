@@ -7,7 +7,7 @@ import { findIconDefinition, IconPrefix } from '@fortawesome/fontawesome-svg-cor
 import { IconName } from '@fortawesome/free-regular-svg-icons';
 import { motion } from 'framer-motion';
 
-function PortfolioSkill({ name, slug, icon, prefix }: IPortfolioSkillInput) {
+const PortfolioSkill = ({ name, slug, icon, prefix }: IPortfolioSkillInput) => {
   const { selectedTechnologies, setSelectedTechnologies } = useContext(PortfolioContext);
 
   const icoDefinition: IconDefinition =
@@ -45,6 +45,6 @@ function PortfolioSkill({ name, slug, icon, prefix }: IPortfolioSkillInput) {
       </div>
     </motion.div>
   );
-}
+};
 
 export default PortfolioSkill;

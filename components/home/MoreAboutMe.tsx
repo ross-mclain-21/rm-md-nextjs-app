@@ -11,7 +11,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { faCss3Alt, faHtml5, faJsSquare, faUnity } from '@fortawesome/free-brands-svg-icons';
 
-export default function MoreAboutMe() {
+const MoreAboutMe = () => {
   const { setDevelopRef } = useContext(GlobalContext);
   const developRef = useRef();
 
@@ -259,6 +259,33 @@ export default function MoreAboutMe() {
           </div>
         </div>
       </div>
+      <div className="row about-me-life-moment">
+        <div className="col-md-6 d-flex justify-content-center">
+          <div className="p-3">
+            <p className="code ff-press-start">2022</p>
+            <p className="code ff-press-start">Senior Software Engineer</p>
+            <p>
+              In June 2022, after 5 years at Tyler Technologies I have decided to transition to a Senior Software
+              Engineer position at Blue Rabbit Veterinary. I am extremely excited about this opportunity, and I look
+              forward to building an amazing product that will enable Veterinary clinics and the Pharmacies that support
+              them, while expanding my professional tech stack.
+            </p>
+          </div>
+        </div>
+        <div className="col-md-6 d-flex flex-column align-items-center justify-content-center">
+          <div className="px-3 d-flex align-items-center justify-content-center flex-wrap">
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">React</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">Node</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">TypeScript</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">Apollo</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">GraphQL</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">TailwindCSS</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">PostgreSQL</span>
+          </div>
+        </div>
+      </div>
     </div>
   );
-}
+};
+
+export default MoreAboutMe;

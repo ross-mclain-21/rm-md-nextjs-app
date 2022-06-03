@@ -12,14 +12,14 @@ interface HomeDetailListItemInput {
   link?: string;
 }
 
-function HomeDetailListItem({
+const HomeDetailListItem = ({
   faIcon,
   text,
   faClasses = 'fa-2x',
   textClasses = '',
   isLink = false,
   link = ''
-}: HomeDetailListItemInput) {
+}: HomeDetailListItemInput) => {
   return (
     <>
       {!isLink ? (
@@ -39,6 +39,6 @@ function HomeDetailListItem({
       )}
     </>
   );
-}
+};
 
 export default HomeDetailListItem;

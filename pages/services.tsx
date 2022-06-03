@@ -6,7 +6,7 @@ import TypeWriter from '../components/common/TypeWriter';
 import { faDollarSign } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export default function Services() {
+const Services = () => {
   const controls = useAnimation();
 
   useEffect(() => {
@@ -146,4 +146,5 @@ export default function Services() {
       </motion.div>
     </div>
   );
-}
+};
+export default Services;

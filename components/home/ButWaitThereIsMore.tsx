@@ -7,8 +7,8 @@ import { bounceTransition, serviceVariants } from '../common/CommonAnimations';
 import { scrollTo } from '../common/CommonFunctions';
 import GlobalContext from '../common/GlobalContext';
 
-function ButWaitThereIsMore() {
-  const { developRef, hasScrolled } = useContext(GlobalContext);
+const ButWaitThereIsMore = () => {
+  const { developRef } = useContext(GlobalContext);
   const controls = useAnimation();
 
   let scrollToElement = () => {
@@ -47,6 +47,6 @@ function ButWaitThereIsMore() {
       </motion.div>
     </div>
   );
-}
+};
 
 export default ButWaitThereIsMore;

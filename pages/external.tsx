@@ -6,7 +6,7 @@ import Loading from '../components/common/Loading';
 import ErrorMessage from '../components/common/ErrorMessage';
 import Highlight from '../components/common/Highlight';
 
-function External() {
+const External = () => {
   const [state, setState] = useState({ isLoading: false, response: undefined, error: undefined });
 
   const callApi = async () => {
@@ -65,7 +65,7 @@ function External() {
       </div>
     </div>
   );
-}
+};
 
 export default withPageAuthRequired(External, {
   onRedirecting: () => <Loading />,

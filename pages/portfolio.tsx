@@ -5,26 +5,14 @@ import PortfolioContext from '../components/portfolio/PortfolioContext';
 import { IPortfolioItemInput, IPortfolioSkillInput } from '../components/common/CommonInterfaces';
 import PortfolioSkill from '../components/portfolio/PortfolioSkillI';
 
-function Portfolio() {
+const Portfolio = () => {
   const [portfolioItemList, setPortfolioItemList] = useState<IPortfolioItemInput[]>([]);
   const [portfolioSkillList, setPortfolioSkillList] = useState([]);
   const [selectedTechnologies, setSelectedTechnologies] = useState<string[]>([]);
 
   useEffect(() => {
     axios.get('/assets/json/PortfolioItemList.json').then(res => {
-      setPortfolioItemList(
-        res.data.sort((a: any, b: any) => {
-          if (a.type === 'WEBSITE' && b.type !== 'WEBSITE') {
-            return -1;
-          } else if (a.type !== 'WEBSITE' && b.type === 'WEBSITE') {
-            return 1;
-          }
-
-          if (a.year < b.year) return 1;
-          if (a.year > b.year) return -1;
-          return 0;
-        })
-      );
+      setPortfolioItemList(res.data.sort(sortPortfolioItems));
     });
 
     axios.get('/assets/json/PortfolioSkillList.json').then(res => {
@@ -97,6 +85,6 @@ function Portfolio() {
       </div>
     </PortfolioContext.Provider>
   );
-}
+};
 
 export default Portfolio;

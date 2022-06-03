@@ -13,7 +13,7 @@ interface TypeWriterState {
   typingSpeed: number;
 }
 
-function TypeWriter({ message, classes, typingSpeed = 300 }: TypeWriterInput) {
+const TypeWriter = ({ message, classes, typingSpeed = 300 }: TypeWriterInput) => {
   const initialState: TypeWriterState = {
     text: '',
     isDeleting: false,
@@ -36,11 +36,11 @@ function TypeWriter({ message, classes, typingSpeed = 300 }: TypeWriterInput) {
     return () => clearTimeout(timer);
   }, [message]);
 
-  function getCurrentText(currentState: TypeWriterState) {
+  const getCurrentText = (currentState: TypeWriterState) => {
     return currentState.isDeleting
       ? message.substring(0, currentState.text.length - 1)
       : message.substring(0, currentState.text.length + 1);
-  }
+  };
 
   return (
     <div className={'d-flex flex-column'}>
@@ -48,6 +48,6 @@ function TypeWriter({ message, classes, typingSpeed = 300 }: TypeWriterInput) {
       <span className={classes + ' opacity-0 h-0'}>{message}</span>
     </div>
   );
-}
+};
 
 export default TypeWriter;

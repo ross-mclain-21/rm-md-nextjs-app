@@ -1,9 +1,7 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronRight, faMinus } from '@fortawesome/free-solid-svg-icons';
 import TypeWriter from '../common/TypeWriter';
 
-function HomeHeader() {
+const HomeHeader = () => {
   return (
     <div className="d-flex flex-column align-items-center justify-content-end flex-fill">
       <div>
@@ -17,6 +15,6 @@ function HomeHeader() {
       </div>
     </div>
   );
-}
+};
 
 export default HomeHeader;
