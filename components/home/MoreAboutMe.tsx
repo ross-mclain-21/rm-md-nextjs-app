@@ -277,10 +277,36 @@ const MoreAboutMe = () => {
             <span className="about-me-skill-icon-text p-3 me-3 mb-3">React</span>
             <span className="about-me-skill-icon-text p-3 me-3 mb-3">Node</span>
             <span className="about-me-skill-icon-text p-3 me-3 mb-3">TypeScript</span>
-            <span className="about-me-skill-icon-text p-3 me-3 mb-3">Apollo</span>
-            <span className="about-me-skill-icon-text p-3 me-3 mb-3">GraphQL</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">Apollo GraphQL</span>
             <span className="about-me-skill-icon-text p-3 me-3 mb-3">TailwindCSS</span>
             <span className="about-me-skill-icon-text p-3 me-3 mb-3">PostgreSQL</span>
+          </div>
+        </div>
+      </div>
+      <div className="row about-me-life-moment">
+        <div className="col-md-6 d-flex justify-content-center">
+          <div className="p-3">
+            <p className="code ff-press-start">2022</p>
+            <p className="code ff-press-start">Tech Lead</p>
+            <p>
+              In October 2022, after 5 months at Blue Rabbit Veterinary I have moved into the role of Tech Lead. It had
+              been my goal from the beginning of joining Blue Rabbit to lead the development of our Practice Portal and
+              I am very excited to continue on that journey! We have a great team and I can't wait to see what next year
+              holds regarding the exciting features and products we can provide veterinarians all over the US.
+            </p>
+          </div>
+        </div>
+        <div className="col-md-6 d-flex flex-column align-items-center justify-content-center">
+          <div className="px-3 d-flex align-items-center justify-content-center flex-wrap">
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">React</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">Node</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">TypeScript</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">Apollo GraphQL</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">TailwindCSS</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">PostgreSQL</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">MongoDB</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">Kafka</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">AWS</span>
           </div>
         </div>
       </div>

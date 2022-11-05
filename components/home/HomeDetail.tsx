@@ -14,15 +14,17 @@ const HomeDetail = () => {
           <div className="">
             <TypeWriter message={'JOB TITLE:'} classes="small code" typingSpeed={50} />
           </div>
-          <HomeDetailListItem faIcon={faBriefcase} text={'Senior Software Engineer'} faClasses="fa-1x" />
-          <div className="ms-4 d-flex align-items-center">
-            <HomeDetailListItem
-              faIcon={faAt}
-              text={'Blue Rabbit Veterinary'}
-              faClasses="small"
-              isLink={true}
-              link="https://bluerabbit.vet/"
-            />
+          <div className="d-flex flex-wrap align-items-center">
+            <HomeDetailListItem faIcon={faBriefcase} text={'Tech Lead'} faClasses="fa-1x" />
+            <div className="ms-2 d-flex align-items-center">
+              <HomeDetailListItem
+                faIcon={faAt}
+                text={'Blue Rabbit Veterinary'}
+                faClasses="small"
+                isLink={true}
+                link="https://bluerabbit.vet/"
+              />
+            </div>
           </div>
           <div className="mt-3">
             <TypeWriter message={'HOW TO CONTACT ME:'} classes="small code" typingSpeed={50} />
