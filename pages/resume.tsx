@@ -9,10 +9,7 @@ const Resume = () => {
   const [numPages, setNumPages] = useState(0);
   const [pageNumber, setPageNumber] = useState(1);
 
-  const resumePath =
-    process.env.NODE_ENV == 'development'
-      ? '/assets/files/resume.pdf'
-      : 'https://mc-development.nyc3.digitaloceanspaces.com/resume.pdf';
+  const resumePath = '/assets/files/resume.pdf';
 
   pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
