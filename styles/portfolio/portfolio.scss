@@ -1,5 +1,21 @@
 ﻿@use '../globals.variables';
 
+.portfolio-item-link {
+  border-radius: 1rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio-item-link:hover {
+  border-radius: 1rem;
+  cursor: pointer;
+  border-color: globals.$coding-green-color-hover;
+  background-color: globals.$coding-green-color-hover-transparent;
+  font-weight: bold;
+  transform: scale(0.99);
+}
+
 .portfolio-inner-collapse {
   border-left: 2px solid globals.$coding-green-color;
   padding-left: 3em;

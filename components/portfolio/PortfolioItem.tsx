@@ -7,22 +7,19 @@ const PortfolioItem = ({ description, images = [], title, link, technologies, ty
   const { selectedTechnologies } = useContext(PortfolioContext);
 
   return (
-    <motion.div layout className={`col-xl-3 col-lg-4 col-md-6 mb-5`}>
+    <motion.div
+      layout
+      className={`col-xl-3 col-lg-4 col-md-6 mb-5 p-3 ${link && 'portfolio-item-link'}`}
+      onClick={() => {
+        window.open(link, '_blank');
+      }}>
       <div
         className={`portfolio-item-block${
           selectedTechnologies.length > 0 && !selectedTechnologies.some(technology => technologies.includes(technology))
             ? ' hidden-skill'
             : ''
         }`}>
-        <h3>
-          {link != null ? (
-            <a href={link} target="_blank">
-              {title}
-            </a>
-          ) : (
-            title
-          )}
-        </h3>
+        <h3>{title}</h3>
         <div className="d-flex align-items-center justify-content-between">
           <span>{type}</span>
           <i>{year}</i>

@@ -1,9 +1,24 @@
 ﻿[
   {
+    "title": "Precision Equipment Coatings",
+    "description": "Previously Precision Collision Repair, this is the new and improved website brought into a more modern era while still keeping the same feel and look. I built this using NextJS, Tailwindcss, React, Typescript, and Contentful to allow the customer to keep the data up to date as they need without waiting for me to make any changes.",
+    "technologies": ["NextJS", "Tailwind", "TS","CMS","React","Node"],
+    "type": "WEBSITE",
+    "year": 2023,
+    "link": "https://precisionequipmentcoatings.com/",
+    "images": [
+      {
+        "src": "/assets/images/portfolio/PCR/precisionequipmentcoatings.png",
+        "alt": "Precision Equipment Coatings Website Image"
+      }
+    ]
+  },
+  {
     "title": "Cup o' tal",
     "description": "A website I am currently developing that will be used for a friend's new coffee shop. This is an example of using CMS to allow the customer to keep the data up to date as they need without waiting for me to make any changes.",
     "technologies": ["HTML", "CSS", "JS", "TS", "React", "SCSS", "Node","Next.JS","CMS"],
     "type": "WEBSITE",
+    "link": "https://cupotal-nextjs-app.vercel.app/",
     "year": 2022,
     "images": [
       {
@@ -21,7 +36,7 @@
     "images": [
       {
         "src": "/assets/images/portfolio/PersonalWebsite/reactsite.png",
-        "alt": "React Website Landing Page"
+        "alt": "NextJS Website Landing Page"
       }
     ]
   },
@@ -47,19 +62,6 @@
     ]
   },
   {
-    "title": "Jordan Dube Portfolio",
-    "description": "This is a website I created for my friend Jordan who needed a website that provided a central location for all links to his social media and other projects.",
-    "technologies": ["HTML", "CSS", "JS", "C#", "ASP.NET"],
-    "type": "WEBSITE",
-    "year": 2019,
-    "images": [
-      {
-        "src": "/assets/images/portfolio/JD/JDUBE.jpg",
-        "alt": "Jordan Dube Personal Website"
-      }
-    ]
-  },
-  {
     "title": "Mclain.de",
     "description": "One of the many iterations of my personal website. I began it in 2018, building on my experience at Tyler Technologies. It is built using ASP.Net MVC with cshtml, JS/JQuery, CSS with an Entity Framework code first SQL database for authentication and data.",
     "technologies": [
@@ -77,19 +79,6 @@
       {
         "src": "/assets/images/portfolio/PersonalWebsite/Mclain.de.png",
         "alt": "Personal Website Mclain.de"
-      }
-    ]
-  },
-  {
-    "title": "Precision Collision Repair",
-    "description": "My very first fully developed website. I was just coming off my 3rd year of college and a friend of mine from high-school knew I was in this field and asked if I could help him out with his company website! I made a simple website using straight html, css, and js and published it on GoDaddy.",
-    "technologies": ["HTML", "CSS", "JS"],
-    "type": "WEBSITE",
-    "year": 2016,
-    "images": [
-      {
-        "src": "/assets/images/portfolio/PCR/precision%20collision%20repair2.jpg",
-        "alt": "Precision Collision Repair Website Image"
       }
     ]
   },
