@@ -26,7 +26,7 @@ app.use(morgan('dev'));
 app.use(helmet());
 app.use(cors({ origin: baseUrl }));
 
-const checkJwt = jwt({
+const checkJwt = jwt.expressjwt({
   secret: jwksRsa.expressJwtSecret({
     cache: true,
     rateLimit: true,
