@@ -11,7 +11,9 @@ const PortfolioItem = ({ description, images = [], title, link, technologies, ty
       layout
       className={`col-xl-3 col-lg-4 col-md-6 mb-5 p-3 ${link && 'portfolio-item-link'}`}
       onClick={() => {
-        window.open(link, '_blank');
+          if(link) {
+              window.open(link, '_blank');
+          }
       }}>
       <div
         className={`portfolio-item-block${
