@@ -59,6 +59,7 @@ const Portfolio = () => {
                   images={portfolioItem.images}
                   title={portfolioItem.title}
                   link={portfolioItem.link}
+                  href={portfolioItem.href}
                   year={portfolioItem.year}
                   type={portfolioItem.type}
                   technologies={portfolioItem.technologies}
