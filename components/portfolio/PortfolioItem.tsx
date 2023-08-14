@@ -3,16 +3,19 @@ import { Image, IPortfolioItemInput } from '../common/CommonInterfaces';
 import PortfolioContext from './PortfolioContext';
 import { motion } from 'framer-motion';
 
-const PortfolioItem = ({ description, images = [], title, link, technologies, type, year }: IPortfolioItemInput) => {
+const PortfolioItem = ({ description, images = [], title, link,href, technologies, type, year }: IPortfolioItemInput) => {
   const { selectedTechnologies } = useContext(PortfolioContext);
 
   return (
     <motion.div
       layout
-      className={`col-xl-3 col-lg-4 col-md-6 mb-5 p-3 ${link && 'portfolio-item-link'}`}
+      className={`col-xl-3 col-lg-4 col-md-6 mb-5 p-3 ${(link || href) && 'portfolio-item-link'}`}
       onClick={() => {
-          if(link) {
-              window.open(link, '_blank');
+          if(href) {
+              window.open(href, '_blank');
+          }
+          if(link){
+            location.href = link;
           }
       }}>
       <div

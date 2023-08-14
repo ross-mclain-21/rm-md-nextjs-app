@@ -10,6 +10,7 @@ export interface IPortfolioItemInput {
   images: Image[];
   title: string;
   link?: string;
+  href?: string;
   technologies: string[];
   type: string;
   year: number;

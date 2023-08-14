@@ -5,7 +5,7 @@
   "technologies": ["NextJS", "Tailwind", "TS","CMS","React","Node"],
   "type": "WEBSITE",
   "year": 2023,
-  "link": "https://wedding-in-the-woods.vercel.app/",
+  "href": "https://wedding-in-the-woods.vercel.app/",
   "images": [
     {
       "src": "/assets/images/portfolio/WeddingInTheWoods/Thumbnail.png",
@@ -19,7 +19,7 @@
     "technologies": ["NextJS", "Tailwind", "TS","CMS","React","Node"],
     "type": "WEBSITE",
     "year": 2023,
-    "link": "https://precisionequipmentcoatings.com/",
+    "href": "https://precisionequipmentcoatings.com/",
     "images": [
       {
         "src": "/assets/images/portfolio/PCR/precisionequipmentcoatings.png",
@@ -32,7 +32,7 @@
     "description": "A website I am currently developing that will be used for a friend's new coffee shop. This is an example of using CMS to allow the customer to keep the data up to date as they need without waiting for me to make any changes.",
     "technologies": ["HTML", "CSS", "JS", "TS", "React", "SCSS", "Node","Next.JS","CMS"],
     "type": "WEBSITE",
-    "link": "https://cupotal-nextjs-app.vercel.app/",
+    "href": "https://cupotal-nextjs-app.vercel.app/",
     "year": 2022,
     "images": [
       {
@@ -101,6 +101,7 @@
     "description": "My friends and I entered into a 48 hour game jam with the theme of celebration. We ended up coming up with this idea for a cat trying to gather items for a party with their fellow cat friends. Theo the cat has to avoid his owners while grabbing everything and bringing it to his cat bed in preparation for the party.",
     "technologies": ["C#", "Unity"],
     "type": "VIDEO GAME",
+    "link": "/theosCelebration",
     "year": 2020,
     "images": [
       {
@@ -127,6 +128,7 @@
     "description": "During an internship at the CI2 lab on the USM campus while attending college, I built this little medieval simulation game. It is a top down view of a group of settlers who require direction. You are able to command them to: build structures, cut down trees, hunt and much more all while they have a need for sleep, water, and hunger. This is where I learned so much about C# and Unity, and was how I was able to launch myself into ASP.Net at Tyler Technologies.",
     "technologies": ["C#", "Unity"],
     "type": "VIDEO GAME",
+    "link": "/kingAndCountry",
     "year": 2016,
     "images": [
       {
