@@ -1,14 +1,32 @@
 ﻿[
   {
-    "name": "HTML",
-    "slug": "HTML",
-    "icon": "html5",
+    "name": "ASP.NET",
+    "slug": "ASP.NET",
+    "icon": "microsoft",
     "prefix": "fab"
+  },
+  {
+    "name": "Contentful",
+    "slug": "Contentful",
+    "icon": "images",
+    "prefix": "far"
   },
   {
     "name": "CSS",
     "slug": "CSS",
     "icon": "css3-alt",
+    "prefix": "fab"
+  },
+  {
+    "name": "C#",
+    "slug": "C#",
+    "icon": "file-code",
+    "prefix": "fas"
+  },
+  {
+    "name": "HTML",
+    "slug": "HTML",
+    "icon": "html5",
     "prefix": "fab"
   },
   {
@@ -18,10 +36,10 @@
     "prefix": "fab"
   },
   {
-    "name": "TypeScript",
-    "slug": "TS",
-    "icon": "file-code",
-    "prefix": "far"
+    "name": "NodeJS",
+    "slug": "Node",
+    "icon": "node",
+    "prefix": "fab"
   },
   {
     "name": "ReactJS",
@@ -36,28 +54,16 @@
     "prefix": "fab"
   },
   {
-    "name": "NodeJS",
-    "slug": "Node",
-    "icon": "node",
-    "prefix": "fab"
-  },
-  {
-    "name": "C#",
-    "slug": "C#",
-    "icon": "file-code",
-    "prefix": "fas"
-  },
-  {
-    "name": "ASP.NET",
-    "slug": "ASP.NET",
-    "icon": "microsoft",
-    "prefix": "fab"
-  },
-  {
     "name": "SQL",
     "slug": "SQL",
     "icon": "database",
     "prefix": "fas"
+  },
+  {
+    "name": "TypeScript",
+    "slug": "TS",
+    "icon": "file-code",
+    "prefix": "far"
   },
   {
     "name": "Unity",

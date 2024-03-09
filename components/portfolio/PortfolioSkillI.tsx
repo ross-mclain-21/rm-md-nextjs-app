@@ -6,12 +6,13 @@ import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { findIconDefinition, IconPrefix } from '@fortawesome/fontawesome-svg-core';
 import { IconName } from '@fortawesome/free-regular-svg-icons';
 import { motion } from 'framer-motion';
+import Image from "next/image";
 
-const PortfolioSkill = ({ name, slug, icon, prefix }: IPortfolioSkillInput) => {
+const PortfolioSkill = ({ name, slug, icon, prefix, type, iconHover }: IPortfolioSkillInput) => {
   const { selectedTechnologies, setSelectedTechnologies } = useContext(PortfolioContext);
 
   const icoDefinition: IconDefinition =
-    icon != null
+    icon != null && type !== 'image'
       ? findIconDefinition({
           prefix: prefix as IconPrefix,
           iconName: icon as IconName
@@ -33,11 +34,13 @@ const PortfolioSkill = ({ name, slug, icon, prefix }: IPortfolioSkillInput) => {
         }
       }}>
       <div className="d-flex flex-column align-items-center justify-content-center">
-        {icon != null ? (
+        {icon != null && type !== 'image' ? (
           <FontAwesomeIcon
             icon={icoDefinition}
             className={`mb-2 skill-icon ${skillSelected ? 'skill-selected' : ''}`}
           />
+        ) : icon != null ? (
+            <Image src={icon} alt={name} width={48} height={48} className={`skill-image ${skillSelected ? 'skill-selected' : ''}`} />
         ) : (
           <span className={`skill-icon skill-text ${skillSelected ? 'skill-selected' : ''}`}>{name}</span>
         )}

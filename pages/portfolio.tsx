@@ -4,6 +4,7 @@ import axios from 'axios';
 import PortfolioContext from '../components/portfolio/PortfolioContext';
 import { IPortfolioItemInput, IPortfolioSkillInput } from '../components/common/CommonInterfaces';
 import PortfolioSkill from '../components/portfolio/PortfolioSkillI';
+import portfolioSkillI from "../components/portfolio/PortfolioSkillI";
 
 const Portfolio = () => {
   const [portfolioItemList, setPortfolioItemList] = useState<IPortfolioItemInput[]>([]);
@@ -12,7 +13,7 @@ const Portfolio = () => {
 
   useEffect(() => {
     axios.get('/assets/json/PortfolioItemList.json').then(res => {
-      setPortfolioItemList(res.data.sort(sortPortfolioItems));
+      setPortfolioItemList(res.data?.filter((ps)=> ps.hidden !== true).sort(sortPortfolioItems));
     });
 
     axios.get('/assets/json/PortfolioSkillList.json').then(res => {
@@ -77,6 +78,8 @@ const Portfolio = () => {
                     name={portfolioSkill.name}
                     icon={portfolioSkill.icon}
                     slug={portfolioSkill.slug}
+                    type={portfolioSkill.type}
+                    iconHover={portfolioSkill.iconHover}
                   />
                 ))}
               </div>

@@ -21,4 +21,7 @@ export interface IPortfolioSkillInput {
   slug: string;
   icon: string;
   prefix?: string;
+  type?: string;
+  iconHover?: string;
+  hidden?: boolean;
 }

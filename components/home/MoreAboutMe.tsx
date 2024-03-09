@@ -247,7 +247,7 @@ const MoreAboutMe = () => {
         </div>
         <div className="col-md-6 d-flex flex-column align-items-center justify-content-center">
           <div className="px-3 d-flex align-items-center justify-content-center flex-wrap">
-            <span className="about-me-skill-icon-text p-3 me-3 mb-3">REACT</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">React</span>
             <span className="about-me-skill-icon-text p-3 me-3 mb-3">TSX</span>
             <span className="about-me-skill-icon-text p-3 me-3 mb-3">NEXT.JS</span>
             <span className="about-me-skill-icon-text p-3 me-3 mb-3">JavaScript</span>
@@ -255,7 +255,7 @@ const MoreAboutMe = () => {
             <span className="about-me-skill-icon-text p-3 me-3 mb-3">SCSS</span>
             <span className="about-me-skill-icon-text p-3 me-3 mb-3">Bootstrap</span>
             <span className="about-me-skill-icon-text p-3 me-3 mb-3">AWS</span>
-            <span className="about-me-skill-icon-text p-3 me-3 mb-3">Postgres</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">PostgreSQL</span>
           </div>
         </div>
       </div>

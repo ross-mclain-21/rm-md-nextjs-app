@@ -1,22 +1,36 @@
 ﻿[
   {
-  "title": "Wedding in the Woods",
-  "description": "A website I am currently developing that will be used to promote a local wedding venue and provide all necessary info for prospective clients.",
-  "technologies": ["NextJS", "Tailwind", "TS","CMS","React","Node"],
-  "type": "WEBSITE",
-  "year": 2023,
-  "href": "https://wedding-in-the-woods.vercel.app/",
-  "images": [
-    {
-      "src": "/assets/images/portfolio/WeddingInTheWoods/Thumbnail.png",
-      "alt": "Wedding In The Woods Website Image"
-    }
-  ]
-},
+    "title": "Freetyme",
+    "description": "A work in progress application I am building to allow groups to track when everyone is free easily and plan events around others schedules without the need for back and forth.",
+    "technologies": ["NextJS", "Tailwind", "TS","React","Vercel"],
+    "type": "WEBSITE",
+    "year": 2024,
+    "href": "https://www.freetyme.vercel.app",
+    "images": [
+      {
+        "src": "/assets/images/portfolio/Freetyme/freetyme_thumbnail.png",
+        "alt": "Freetyme Thumbnail Image"
+      }
+    ]
+  },
+  {
+    "title": "Wedding in the Woods",
+    "description": "A local wedding venue in my hometown, Wedding in the woods asked me to make a modern website that would display all they have to offer and provide all necessary info for prospective clients.",
+    "technologies": ["NextJS", "Tailwind", "TS","Contentful","React","Node","Vercel"],
+    "type": "WEBSITE",
+    "year": 2023,
+    "href": "https://www.weddinginthewoodsmaine.com",
+    "images": [
+      {
+        "src": "/assets/images/portfolio/WeddingInTheWoods/Thumbnail.png",
+        "alt": "Wedding In The Woods Website Image"
+      }
+    ]
+  },
   {
     "title": "Precision Equipment Coatings",
     "description": "Previously Precision Collision Repair, this is the new and improved website brought into a more modern era while still keeping the same feel and look. I built this using NextJS, Tailwindcss, React, Typescript, and Contentful to allow the customer to keep the data up to date as they need without waiting for me to make any changes.",
-    "technologies": ["NextJS", "Tailwind", "TS","CMS","React","Node"],
+    "technologies": ["NextJS", "Tailwind", "TS","Contentful","React","Node","Vercel"],
     "type": "WEBSITE",
     "year": 2023,
     "href": "https://precisionequipmentcoatings.com/",
@@ -29,8 +43,8 @@
   },
   {
     "title": "Cup o' tal",
-    "description": "A website I am currently developing that will be used for a friend's new coffee shop. This is an example of using CMS to allow the customer to keep the data up to date as they need without waiting for me to make any changes.",
-    "technologies": ["HTML", "CSS", "JS", "TS", "React", "SCSS", "Node","Next.JS","CMS"],
+    "description": "This is a basic example of using Contentful to allow the customer to keep the data up to date as they need without waiting for me to make any changes.",
+    "technologies": ["HTML", "CSS", "JS", "TS", "React", "SCSS", "Node","Next.JS","Contentful","WIP","Vercel"],
     "type": "WEBSITE",
     "href": "https://cupotal-nextjs-app.vercel.app/",
     "year": 2022,
@@ -44,7 +58,7 @@
   {
     "title": "This.Website",
     "description": "This is my replacement for my previous personal website. I have worked on a few react apps but this is the first time I have delved into fully building it myself from the ground up. I have built it with Next.JS and am deploying it with Vercel currently but plan to migrate to netlify.",
-    "technologies": ["HTML", "CSS", "JS", "TS", "React", "SCSS", "Node","Next.JS"],
+    "technologies": ["HTML", "CSS", "JS", "TS", "React", "SCSS", "Node","Next.JS","Vercel"],
     "type": "WEBSITE",
     "year": 2021,
     "images": [
@@ -73,7 +87,8 @@
         "src": "/assets/images/portfolio/PersonalWebsite/jobestimator.png",
         "alt": "Job Estimator"
       }
-    ]
+    ],
+    "hidden": true
   },
   {
     "title": "Mclain.de",
@@ -94,7 +109,8 @@
         "src": "/assets/images/portfolio/PersonalWebsite/Mclain.de.png",
         "alt": "Personal Website Mclain.de"
       }
-    ]
+    ],
+    "hidden": true
   },
   {
     "title": "Celebration At Theos",
