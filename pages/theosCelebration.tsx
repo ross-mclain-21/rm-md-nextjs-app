@@ -11,9 +11,7 @@ const TheosCelebration = () => {
   });
   
   // We'll use a state to store the device pixel ratio.
-  const [devicePixelRatio, setDevicePixelRatio] = useState(
-    window.devicePixelRatio
-  );
+  const [devicePixelRatio, setDevicePixelRatio] = useState<number | undefined>();
   
    useEffect(
     () => {
