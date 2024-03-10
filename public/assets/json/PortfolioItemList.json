@@ -5,7 +5,7 @@
     "technologies": ["NextJS", "Tailwind", "TS","React","Vercel"],
     "type": "WEBSITE",
     "year": 2024,
-    "href": "https://www.freetyme.vercel.app",
+    "href": "https://freetyme.vercel.app",
     "images": [
       {
         "src": "/assets/images/portfolio/Freetyme/freetyme_thumbnail.png",
