@@ -1,7 +1,4 @@
-import React from 'react';
 import Link from 'next/link';
-
-import NavBarItem from '../nav/NavBarItem';
 
 const PageLink = ({
   children,
@@ -15,10 +12,8 @@ const PageLink = ({
   testId?: any;
 }) => {
   return (
-    <Link href={href}>
-      <a id={testId} className={className}>
-        {children}
-      </a>
+    <Link id={testId} href={href} className={className}>
+      {children}
     </Link>
   );
 };

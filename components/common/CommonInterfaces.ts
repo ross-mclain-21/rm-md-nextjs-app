@@ -14,6 +14,7 @@ export interface IPortfolioItemInput {
   technologies: string[];
   type: string;
   year: number;
+  githubLink?: string;
 }
 
 export interface IPortfolioSkillInput {

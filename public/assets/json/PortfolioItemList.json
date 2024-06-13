@@ -1,8 +1,23 @@
 ﻿[
   {
+    "title": "Decyde",
+    "description": "Decyde is a work in progress application that I am building to allow users to vote up movies they wish to watch within a group. The goal is to keep track of movies seen already and have a top list to consider when it comes time to watch a movie to speed things up!",
+    "technologies": ["NextJS", "Tailwind", "TS", "React", "Vercel", "SQL"],
+    "type": "WEBSITE",
+    "year": 2024,
+    "href": "https://decyde.vercel.app/",
+    "images": [
+      {
+        "src": "/assets/images/portfolio/Decyde/decyde_thumbnail.png",
+        "alt": "Decyde Thumbnail Image"
+      }
+    ],
+    "githubLink": "https://github.com/ross-mclain-br/decyde"
+  },
+  {
     "title": "Freetyme",
     "description": "A work in progress application I am building to allow groups to track when everyone is free easily and plan events around others schedules without the need for back and forth.",
-    "technologies": ["NextJS", "Tailwind", "TS","React","Vercel"],
+    "technologies": ["NextJS", "Tailwind", "TS", "React", "Vercel", "SQL"],
     "type": "WEBSITE",
     "year": 2024,
     "href": "https://freetyme.vercel.app",
@@ -11,12 +26,13 @@
         "src": "/assets/images/portfolio/Freetyme/freetyme_thumbnail.png",
         "alt": "Freetyme Thumbnail Image"
       }
-    ]
+    ],
+    "githubLink": "https://github.com/ross-mclain-br/freetyme"
   },
   {
     "title": "Wedding in the Woods",
     "description": "A local wedding venue in my hometown, Wedding in the woods asked me to make a modern website that would display all they have to offer and provide all necessary info for prospective clients.",
-    "technologies": ["NextJS", "Tailwind", "TS","Contentful","React","Node","Vercel"],
+    "technologies": ["NextJS", "Tailwind", "TS", "Contentful", "React", "Node", "Vercel"],
     "type": "WEBSITE",
     "year": 2023,
     "href": "https://www.weddinginthewoodsmaine.com",
@@ -30,7 +46,7 @@
   {
     "title": "Precision Equipment Coatings",
     "description": "Previously Precision Collision Repair, this is the new and improved website brought into a more modern era while still keeping the same feel and look. I built this using NextJS, Tailwindcss, React, Typescript, and Contentful to allow the customer to keep the data up to date as they need without waiting for me to make any changes.",
-    "technologies": ["NextJS", "Tailwind", "TS","Contentful","React","Node","Vercel"],
+    "technologies": ["NextJS", "Tailwind", "TS", "Contentful", "React", "Node", "Vercel"],
     "type": "WEBSITE",
     "year": 2023,
     "href": "https://precisionequipmentcoatings.com/",
@@ -44,7 +60,7 @@
   {
     "title": "Cup o' tal",
     "description": "This is a basic example of using Contentful to allow the customer to keep the data up to date as they need without waiting for me to make any changes.",
-    "technologies": ["HTML", "CSS", "JS", "TS", "React", "SCSS", "Node","Next.JS","Contentful","WIP","Vercel"],
+    "technologies": ["HTML", "CSS", "JS", "TS", "React", "SCSS", "Node", "Next.JS", "Contentful", "WIP", "Vercel"],
     "type": "WEBSITE",
     "href": "https://cupotal-nextjs-app.vercel.app/",
     "year": 2022,
@@ -58,7 +74,7 @@
   {
     "title": "This.Website",
     "description": "This is my replacement for my previous personal website. I have worked on a few react apps but this is the first time I have delved into fully building it myself from the ground up. I have built it with Next.JS and am deploying it with Vercel currently but plan to migrate to netlify.",
-    "technologies": ["HTML", "CSS", "JS", "TS", "React", "SCSS", "Node","Next.JS","Vercel"],
+    "technologies": ["HTML", "CSS", "JS", "TS", "React", "SCSS", "Node", "Next.JS", "Vercel"],
     "type": "WEBSITE",
     "year": 2021,
     "images": [
@@ -71,15 +87,7 @@
   {
     "title": "Job Estimator",
     "description": "I created this website for my dad to enable him to build out and track job estimates from the ground up. It allows for work items to be defined with an average time requirement and also allows for overrides when unexpected circumstances arise.",
-    "technologies": [
-      "HTML",
-      "CSS",
-      "JS",
-      "C#",
-      "ASP.NET",
-      "Entity Framework",
-      "SQL"
-    ],
+    "technologies": ["HTML", "CSS", "JS", "C#", "ASP.NET", "Entity Framework", "SQL"],
     "type": "WEBSITE",
     "year": 2021,
     "images": [
@@ -93,15 +101,7 @@
   {
     "title": "Mclain.de",
     "description": "One of the many iterations of my personal website. I began it in 2018, building on my experience at Tyler Technologies. It is built using ASP.Net MVC with cshtml, JS/JQuery, CSS with an Entity Framework code first SQL database for authentication and data.",
-    "technologies": [
-      "HTML",
-      "CSS",
-      "JS",
-      "C#",
-      "ASP.NET",
-      "Entity Framework",
-      "SQL"
-    ],
+    "technologies": ["HTML", "CSS", "JS", "C#", "ASP.NET", "Entity Framework", "SQL"],
     "type": "WEBSITE",
     "year": 2018,
     "images": [

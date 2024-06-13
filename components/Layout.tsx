@@ -2,6 +2,7 @@ import React, { MutableRefObject, useCallback, useEffect, useRef } from 'react';
 import Head from 'next/head';
 
 import NavBar from './nav/NavBar';
+import Script from 'next/script';
 
 const Layout = ({ children }) => {
   const appRef = useRef() as MutableRefObject<HTMLInputElement>;
@@ -11,8 +12,8 @@ const Layout = ({ children }) => {
       <Head>
         <title>McLain Development</title>
         {/* Global Site Tag (gtag.js) - Google Analytics */}
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
-        <script
+        <Script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
+        <Script
           dangerouslySetInnerHTML={{
             __html: `
             window.dataLayer = window.dataLayer || [];

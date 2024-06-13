@@ -20,6 +20,7 @@
   border-left: 2px solid globals.$coding-green-color;
   padding-left: 3em;
 }
+
 .portfolio-item-block {
   color: globals.$coding-green-color;
 
@@ -27,6 +28,7 @@
     opacity: 0.5;
   }
 }
+
 .portfolio-description-block {
   max-width: 500px;
 }
@@ -35,8 +37,10 @@
   border: 2px solid globals.$coding-green-color;
   opacity: 0.7;
 }
+
 .portfolio-skill-list {
   color: globals.$coding-green-color;
+
   .portfolio-skill {
     display: flex;
     align-items: center;
@@ -53,19 +57,35 @@
     align-items: center;
     font-size: 2.9rem;
     cursor: pointer;
+
     &:hover {
       color: globals.$coding-green-color-hover;
     }
+
     &.skill-selected {
       color: globals.$coding-color;
+
       &:hover {
         opacity: 0.8;
       }
     }
+
     &.skill-text {
       font-size: 2rem;
     }
   }
+}
+
+.github-link {
+  color: globals.$coding-green-color;
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    scale: 1.1;
+    color: globals.$coding-color-hover;
+  }
+
+  font-size: 1.5rem;
 }
 
 @media (max-width: globals.$breakpoint-lg) {
@@ -73,6 +93,7 @@
     min-width: 200px;
   }
 }
+
 @media (max-width: globals.$breakpoint-sm) {
   .portfolio-skill-list {
     .portfolio-skill {
@@ -80,6 +101,7 @@
         font-size: 0.6rem;
       }
     }
+
     .skill-icon {
       font-size: 2.1rem;
 
