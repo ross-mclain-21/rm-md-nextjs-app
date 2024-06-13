@@ -3,7 +3,11 @@ import React, { useState, SetStateAction, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
 
+import 'react-pdf/dist/esm/Page/TextLayer.css';
+import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
+
 import { pdfjs, Document, Page } from 'react-pdf';
+import { Button } from 'reactstrap';
 
 const Resume = () => {
   const [numPages, setNumPages] = useState(0);
@@ -11,7 +15,7 @@ const Resume = () => {
 
   const resumePath = '/assets/files/resume.pdf';
 
-  pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+  pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.mjs`;
 
   const onDocumentLoadSuccess = (pdf: SetStateAction<any>) => {
     try {
@@ -64,7 +68,18 @@ const Resume = () => {
               <FontAwesomeIcon icon={faFileDownload} className="mb-0" />
               <span className="ms-2">Download Resume</span>
             </a>
-            <p className="mb-0">{`Page ${pageNumber} of ${numPages}`}</p>
+            <p className="mb-0 me-auto ms-3">{`Page ${pageNumber} of ${numPages}`}</p>
+            {pageNumber > 1 && (
+              <Button onClick={() => setPageNumber(pageNumber - 1)} className="btn btn-outline-code-green">
+                Previous
+              </Button>
+            )}
+
+            {pageNumber < numPages && (
+              <Button onClick={() => setPageNumber(pageNumber + 1)} className="btn btn-outline-code-green">
+                Next
+              </Button>
+            )}
           </div>
         </div>
       </div>

@@ -2,7 +2,8 @@
 @import '../node_modules/bootstrap/scss/buttons';
 
 
-.btn-success:hover, .btn-success:focus{
+.btn-success:hover,
+.btn-success:focus {
   background-color: rgb(98 227 93);
   border-color: rgb(98 227 93);
 }
@@ -19,8 +20,8 @@
   background-color: $coding-green-color;
   color: $background-color;
   border-color: $coding-green-color;
-  
-  &:focus{
+
+  &:focus {
     background-color: $coding-green-color-hover;
     color: $background-color;
 
@@ -41,19 +42,19 @@
   &:hover {
     border-color: $coding-green-color;
     background-color: $coding-green-color;
-    
+
     color: $background-color !important;
   }
 }
 
 //custom buttons
-.btn-code{
+.btn-code {
   @extend .btn-dark;
   background-color: $coding-color;
   color: $background-color;
   border-color: $coding-color;
 
-  &:focus{
+  &:focus {
     background-color: $coding-color-hover;
     color: $background-color;
 
@@ -72,7 +73,7 @@
   background-color: transparent;
 
   &:hover {
-    background-color: $coding-color;
+    background-color: $coding-green-color;
     color: $background-color !important;
   }
 }
