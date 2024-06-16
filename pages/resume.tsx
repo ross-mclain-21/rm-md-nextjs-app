@@ -16,7 +16,8 @@ const Resume = () => {
   const resumePath = '/assets/files/resume.pdf';
 
   pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.mjs`;
-  // @ts-expect-error This does not exist outside of polyfill which this is doing
+
+  //@ts-ignore
   if (typeof Promise.withResolvers === 'undefined') {
     if (window)
       // @ts-expect-error This does not exist outside of polyfill which this is doing
