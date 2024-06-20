@@ -38,10 +38,10 @@ const HomeDetail = () => {
           />
           <HomeDetailListItem
             faIcon={faGithub}
-            text={'ross-mclain-21'}
+            text={'ross-mclain-br'}
             faClasses="fa-1x"
             isLink={true}
-            link="https://github.com/ross-mclain-21/ross-mclain-21"
+            link="https://github.com/ross-mclain-br"
           />
           <HomeDetailListItem
             faIcon={faLinkedin}
