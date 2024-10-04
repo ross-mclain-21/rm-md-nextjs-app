@@ -310,6 +310,35 @@ const MoreAboutMe = () => {
           </div>
         </div>
       </div>
+      <div className="row about-me-life-moment">
+        <div className="col-md-6 d-flex justify-content-center">
+          <div className="p-3">
+            <p className="code ff-press-start">2024</p>
+            <p className="code ff-press-start">Senior Full-Stack Developer</p>
+            <p>
+              In September 2024, after over two years at Blue Rabbit Veterinary I decided to take an opportunity to
+              return to my team at Tyler Technologies with new found experience. I have enjoyed getting back into the
+              swing of things by adding features into the existing code base and have already begun to bring to life a
+              new project within my preferred tech stack. I am excited to see what the future holds as I continue to
+              learn and grow as an engineer.
+            </p>
+          </div>
+        </div>
+        <div className="col-md-6 d-flex flex-column align-items-center justify-content-center">
+          <div className="px-3 d-flex align-items-center justify-content-center flex-wrap">
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">React</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">Node</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">TypeScript</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">Tanstack Query</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">ExpressJS</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">TailwindCSS</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">PostgreSQL</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">AWS</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">ASP.NET</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">jQuery</span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

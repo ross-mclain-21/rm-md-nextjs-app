@@ -15,7 +15,7 @@ const Resume = () => {
 
   const resumePath = '/assets/files/resume.pdf';
 
-  pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+  pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.mjs`;
 
   const onDocumentLoadSuccess = (pdf: SetStateAction<any>) => {
     try {

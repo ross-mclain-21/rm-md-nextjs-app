@@ -15,11 +15,11 @@ const HomeDetail = () => {
             <TypeWriter message={'JOB TITLE:'} classes="small code" typingSpeed={50} />
           </div>
           <div className="d-flex flex-wrap align-items-center">
-            <HomeDetailListItem faIcon={faBriefcase} text={'Tech Lead'} faClasses="fa-1x" />
+            <HomeDetailListItem faIcon={faBriefcase} text={'Senior Full-Stack Developer'} faClasses="fa-1x" />
             <div className="ms-2 d-flex align-items-center">
               <HomeDetailListItem
                 faIcon={faAt}
-                text={'Blue Rabbit Veterinary'}
+                text={'Tyler Technologies'}
                 faClasses="small"
                 isLink={true}
                 link="https://bluerabbit.vet/"
