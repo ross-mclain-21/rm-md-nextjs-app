@@ -206,7 +206,7 @@ const MoreAboutMe = () => {
               <li>Helping to guide newer members on our team through any problems or challenges that came up.</li>
             </ul>
             <p>
-              Since being promoted, the majority of my day to day has continued to be full-stack development with a
+              Since being promoted, the majority of my day to day has continued to be full stack development with a
               focus on solving user stories with dynamic user experiences.
             </p>
           </div>
@@ -236,7 +236,7 @@ const MoreAboutMe = () => {
             <p className="code ff-press-start">2022</p>
             <p className="code ff-press-start">Current Personal Progression</p>
             <p>
-              In 2022, I have continued expanding my knowledge of full-stack technology and have become enthralled with
+              In 2022, I have continued expanding my knowledge of full stack technology and have become enthralled with
               web development in React and subsequently Next.JS. The transition from imperative development with jQuery
               to declarative development with React was a welcome one. I found that in my professional development, a
               lot of the most valuable functionality was trying to mimic the component structure and state management
@@ -314,7 +314,7 @@ const MoreAboutMe = () => {
         <div className="col-md-6 d-flex justify-content-center">
           <div className="p-3">
             <p className="code ff-press-start">2024</p>
-            <p className="code ff-press-start">Senior Full-Stack Developer</p>
+            <p className="code ff-press-start">Senior Full Stack Engineer</p>
             <p>
               In September 2024, after over two years at Blue Rabbit Veterinary I decided to take an opportunity to
               return to my team at Tyler Technologies with new found experience. I have enjoyed getting back into the

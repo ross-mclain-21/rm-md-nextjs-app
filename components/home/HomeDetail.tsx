@@ -15,7 +15,7 @@ const HomeDetail = () => {
             <TypeWriter message={'JOB TITLE:'} classes="small code" typingSpeed={50} />
           </div>
           <div className="d-flex flex-wrap align-items-center">
-            <HomeDetailListItem faIcon={faBriefcase} text={'Senior Full-Stack Developer'} faClasses="fa-1x" />
+            <HomeDetailListItem faIcon={faBriefcase} text={'Senior Full Stack Engineer'} faClasses="fa-1x" />
             <div className="ms-2 d-flex align-items-center">
               <HomeDetailListItem
                 faIcon={faAt}
