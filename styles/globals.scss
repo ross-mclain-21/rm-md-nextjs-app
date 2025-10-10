@@ -1,9 +1,8 @@
 @import 'globals.variables';
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import '../node_modules/bootstrap/scss/bootstrap';
 
 @import 'globals.buttons';
-
 
 @font-face {
   font-family: 'PressStart2P';
@@ -33,52 +32,53 @@ hr {
   color: $coding-green-color;
 }
 
-a,.btn-link {
+a,
+.btn-link {
   color: $coding-green-color;
   box-shadow: none !important;
 
   &:hover {
     color: $coding-green-color-hover;
   }
-  &:not(.btn){
+  &:not(.btn) {
     text-decoration: none;
   }
 }
-.h-0{
-  height:0 !important;
+.h-0 {
+  height: 0 !important;
 }
 
-.opacity-0{
+.opacity-0 {
   opacity: 0 !important;
   pointer-events: none;
 }
-.opacity-1{
+.opacity-1 {
   opacity: 1 !important;
 }
 
-.navbar{
+.navbar {
   background-color: transparent;
-  transition:0.3s;
-  &.has-scrolled{
-    background-color:rgba(var(--bs-dark-rgb));
+  transition: 0.3s;
+  &.has-scrolled {
+    background-color: rgba(var(--bs-dark-rgb));
   }
-  
+
   box-shadow: none;
-  .navbar-toggler{
+  .navbar-toggler {
     border-color: $coding-green-color;
   }
-  .navbar-toggler-icon{
-    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%283, 199, 181, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%283, 199, 181, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   }
 }
 
-.selected-pagelink{
+.selected-pagelink {
   color: $coding-green-color-hover;
   font-weight: bolder;
 }
 
-.code{
-  color:deeppink;
+.code {
+  color: deeppink;
 }
 
 //custom borders
@@ -92,7 +92,7 @@ a,.btn-link {
   border-color: $coding-color;
 }
 
-.border-radius-1{
+.border-radius-1 {
   border-radius: 0.5rem;
 }
 
@@ -104,41 +104,37 @@ a,.btn-link {
 }
 
 //text
-.text-background{
-  color:$background-color;
+.text-background {
+  color: $background-color;
 }
-.text-code{
-  color:$code-color;
+.text-code {
+  color: $code-color;
 }
-.text-code-green{
-  color:$coding-green-color;
+.text-code-green {
+  color: $coding-green-color;
 }
 
 //font-family
-.ff-press-start{
+.ff-press-start {
   font-family: PressStart2P, IBMPlexMono, serif;
 }
-.ff-plex-mono{
+.ff-plex-mono {
   font-family: IBMPlexMono, serif;
 }
 
-.services-container{
-  overflow-y:auto;
+.services-container {
+  overflow-y: auto;
   font-family: PressStart2P, IBMPlexMono, serif;
-
 }
 
 @media (max-width: $breakpoint-md) {
-  .navbar{
-    background-color:rgba(var(--bs-dark-rgb));
+  .navbar {
+    background-color: rgba(var(--bs-dark-rgb));
   }
 }
 
-
-
-
-
-@import "./home/home";
-@import "./resume/resume";
-@import "./portfolio/portfolio";
-@import "./services/services";
+@import './home/home';
+@import './home/galaxy';
+@import './resume/resume';
+@import './portfolio/portfolio';
+@import './services/services';

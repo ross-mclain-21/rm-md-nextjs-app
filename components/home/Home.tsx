@@ -6,7 +6,7 @@ import GlobalContext from '../common/GlobalContext';
 
 const Home = () => {
   const { setHomeRef } = useContext(GlobalContext);
-  const homeRef = useRef();
+  const homeRef = useRef(null);
 
   useEffect(() => {
     setHomeRef(homeRef);

@@ -6,7 +6,7 @@ import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { findIconDefinition, IconPrefix } from '@fortawesome/fontawesome-svg-core';
 import { IconName } from '@fortawesome/free-regular-svg-icons';
 import { motion } from 'framer-motion';
-import Image from "next/image";
+import Image from 'next/image';
 
 const PortfolioSkill = ({ name, slug, icon, prefix, type, iconHover }: IPortfolioSkillInput) => {
   const { selectedTechnologies, setSelectedTechnologies } = useContext(PortfolioContext);
@@ -32,15 +32,22 @@ const PortfolioSkill = ({ name, slug, icon, prefix, type, iconHover }: IPortfoli
           selectedTechnologies.splice(selectedTechnologies.indexOf(slug), 1);
           setSelectedTechnologies([...selectedTechnologies]);
         }
-      }}>
+      }}
+      {...({} as any)}>
       <div className="d-flex flex-column align-items-center justify-content-center">
         {icon != null && type !== 'image' ? (
           <FontAwesomeIcon
             icon={icoDefinition}
-            className={`mb-2 skill-icon ${skillSelected ? 'skill-selected' : ''}`}
+            className={`mb-1 skill-icon ${skillSelected ? 'skill-selected' : ''}`}
           />
         ) : icon != null ? (
-            <Image src={icon} alt={name} width={48} height={48} className={`skill-image ${skillSelected ? 'skill-selected' : ''}`} />
+          <Image
+            src={icon}
+            alt={name}
+            width={12}
+            height={12}
+            className={`skill-image ${skillSelected ? 'skill-selected' : ''}`}
+          />
         ) : (
           <span className={`skill-icon skill-text ${skillSelected ? 'skill-selected' : ''}`}>{name}</span>
         )}

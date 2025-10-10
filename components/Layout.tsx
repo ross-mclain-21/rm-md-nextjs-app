@@ -1,11 +1,12 @@
-import React, { MutableRefObject, useCallback, useEffect, useRef } from 'react';
+import React, { MutableRefObject, useRef } from 'react';
 import Head from 'next/head';
 
 import NavBar from './nav/NavBar';
 import Script from 'next/script';
+import Galaxy from './home/Galaxy';
 
 const Layout = ({ children }) => {
-  const appRef = useRef() as MutableRefObject<HTMLInputElement>;
+  const appRef = useRef(null) as MutableRefObject<HTMLInputElement>;
 
   return (
     <>
@@ -26,6 +27,23 @@ const Layout = ({ children }) => {
           }}
         />
       </Head>
+      <div style={{ top: 0, left: 0, right: 0, bottom: 0, position: 'absolute', zIndex: -1, overflow: 'hidden' }}>
+        <Galaxy
+          mouseRepulsion={false}
+          mouseInteraction={false}
+          density={2.2}
+          glowIntensity={0.1}
+          saturation={0}
+          hueShift={0}
+          speed={3}
+          twinkleIntensity={0}
+          rotationSpeed={0}
+          repulsionStrength={2}
+          autoCenterRepulsion={0}
+          transparent={true}
+          starSpeed={0.8}
+        />
+      </div>
       <main ref={appRef} id="app" className="d-flex flex-column h-100 pt-5" data-testid="layout">
         <NavBar appRef={appRef} />
         {children}

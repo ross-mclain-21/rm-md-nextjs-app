@@ -7,13 +7,15 @@ import {
   faFileCode,
   faGamepad,
   faGraduationCap,
+  faLifeRing,
+  faRing,
   faSchool
 } from '@fortawesome/free-solid-svg-icons';
 import { faCss3Alt, faHtml5, faJsSquare, faUnity } from '@fortawesome/free-brands-svg-icons';
 
 const MoreAboutMe = () => {
   const { setDevelopRef } = useContext(GlobalContext);
-  const developRef = useRef();
+  const developRef = useRef(null);
 
   useEffect(() => {
     setDevelopRef(developRef);
@@ -336,6 +338,22 @@ const MoreAboutMe = () => {
             <span className="about-me-skill-icon-text p-3 me-3 mb-3">AWS</span>
             <span className="about-me-skill-icon-text p-3 me-3 mb-3">ASP.NET</span>
             <span className="about-me-skill-icon-text p-3 me-3 mb-3">jQuery</span>
+          </div>
+        </div>
+      </div>
+      <div className="row about-me-life-moment">
+        <div className="col-md-6 d-flex justify-content-center">
+          <div className="p-3">
+            <FontAwesomeIcon icon={faRing} className="about-me-icon" />
+          </div>
+        </div>
+        <div className="col-md-6 d-flex justify-content-center">
+          <div className="p-3">
+            <p className="code ff-press-start">2025</p>
+            <p>
+              In August 2025, I married my best friend and now wife, Hannah! We are both very excited to start this new
+              chapter of our lives together.
+            </p>
           </div>
         </div>
       </div>

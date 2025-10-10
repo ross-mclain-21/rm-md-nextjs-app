@@ -5,6 +5,7 @@ import Home from '../components/home/Home';
 import { scrollTo } from '../components/common/CommonFunctions';
 import GlobalContext from '../components/common/GlobalContext';
 import MoreAboutMe from '../components/home/MoreAboutMe';
+import Galaxy from '../components/home/Galaxy';
 
 const Index = () => {
   const { homeRef } = useContext(GlobalContext);

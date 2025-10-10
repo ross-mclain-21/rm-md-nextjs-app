@@ -1,39 +1,15 @@
 ﻿[
   {
-    "name": "ASP.NET",
-    "slug": "ASP.NET",
-    "icon": "microsoft",
-    "prefix": "fab"
-  },
-  {
     "name": "Contentful",
     "slug": "Contentful",
     "icon": "images",
     "prefix": "far"
   },
   {
-    "name": "CSS",
-    "slug": "CSS",
-    "icon": "css3-alt",
-    "prefix": "fab"
-  },
-  {
     "name": "C#",
     "slug": "C#",
     "icon": "file-code",
     "prefix": "fas"
-  },
-  {
-    "name": "HTML",
-    "slug": "HTML",
-    "icon": "html5",
-    "prefix": "fab"
-  },
-  {
-    "name": "JavaScript",
-    "slug": "JS",
-    "icon": "js-square",
-    "prefix": "fab"
   },
   {
     "name": "NodeJS",

@@ -20,7 +20,7 @@ const PortfolioItem = ({
   return (
     <motion.div
       layout
-      className={`col-xl-3 col-lg-4 col-md-6 mb-5 p-3 ${(link || href) && 'portfolio-item-link'}`}
+      className={`col-2xl-4 col-md-6 mb-5 p-3 ${(link || href) && 'portfolio-item-link'}`}
       onClick={() => {
         if (href) {
           window.open(href, '_blank');
@@ -29,16 +29,15 @@ const PortfolioItem = ({
           location.href = link;
         }
       }}
-    >
+      {...({} as any)}>
       <div
         className={`portfolio-item-block${
           selectedTechnologies.length > 0 && !selectedTechnologies.some(technology => technologies.includes(technology))
             ? ' hidden-skill'
             : ''
-        }`}
-      >
+        }`}>
         <div className="d-flex align-items-center justify-content-between">
-          <h3>{title}</h3>
+          <h4 className="fw-bold">{title}</h4>
           {githubLink && (
             <a
               href={githubLink}
@@ -47,8 +46,7 @@ const PortfolioItem = ({
               className={''}
               onClick={event => {
                 event.stopPropagation();
-              }}
-            >
+              }}>
               <FontAwesomeIcon icon={['fab', 'github']} className={`mb-2 github-link`} />
             </a>
           )}
@@ -74,7 +72,7 @@ const PortfolioItem = ({
                       ? 'badge border-dashed border-code text-code fw-bold rounded-pill ms-1 me-2 mb-2'
                       : 'badge border-dashed border-code-green border-1 text-code-green fw-light rounded-pill me-1 mb-2'
                   }
-                >
+                  {...({} as any)}>
                   {technology}
                 </motion.span>
               );

@@ -6,7 +6,7 @@ import 'highlight.js/styles/monokai-sublime.css';
 
 const Highlight = ({ children, testId }: { children: any; testId?: number }) => {
   const [isLoaded, setIsLoaded] = useState(false);
-  const codeNode = useRef();
+  const codeNode = useRef(null);
   const language = 'json';
 
   useEffect(() => {

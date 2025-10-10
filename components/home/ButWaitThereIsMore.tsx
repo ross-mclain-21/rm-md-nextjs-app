@@ -22,20 +22,19 @@ const ButWaitThereIsMore = () => {
         initial="visible"
         variants={serviceVariants}
         className="d-flex flex-column align-items-center justify-content-center p-5"
-      >
+        {...({} as any)}>
         <TypeWriter message={'MORE ABOUT ME:'} classes="small code" typingSpeed={50} />
         <button
           className="btn btn-link"
           onClick={() => {
             scrollToElement();
-          }}
-        >
+          }}>
           <motion.h1
             transition={bounceTransition}
             animate={{
               y: ['5px', '-5px']
             }}
-          >
+            {...({} as any)}>
             <FontAwesomeIcon icon={faChevronDown} />
           </motion.h1>
         </button>

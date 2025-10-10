@@ -39,7 +39,8 @@ const Services = () => {
         animate={controls}
         initial="hidden"
         variants={serviceVariants}
-        className="d-flex flex-column container flex-fill pt-5 develop-container">
+        className="d-flex flex-column container flex-fill pt-5 develop-container"
+        {...({} as any)}>
         <h1 className={'me-3 mt-5 mb-4 d-flex align-items-center'}>
           <span className={'code me-3'}>I</span> {titleTypeWriter}
         </h1>
