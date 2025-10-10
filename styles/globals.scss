@@ -60,7 +60,7 @@ a,
   background-color: transparent;
   transition: 0.3s;
   &.has-scrolled {
-    background-color: rgba(var(--bs-dark-rgb));
+    background-color: $background-color;
   }
 
   box-shadow: none;
@@ -129,7 +129,7 @@ a,
 
 @media (max-width: $breakpoint-md) {
   .navbar {
-    background-color: rgba(var(--bs-dark-rgb));
+    background-color: $background-color;
   }
 }
 
