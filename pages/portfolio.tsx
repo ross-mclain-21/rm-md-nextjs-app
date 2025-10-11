@@ -13,12 +13,10 @@ const Portfolio = () => {
 
   useEffect(() => {
     axios.get('/assets/json/PortfolioItemList.json').then(res => {
-      console.log(res);
       setPortfolioItemList(res?.data?.filter(ps => ps.hidden !== true).sort(sortPortfolioItems));
     });
 
     axios.get('/assets/json/PortfolioSkillList.json').then(res => {
-      console.log(res);
       setPortfolioSkillList(res.data);
     });
   }, []);
