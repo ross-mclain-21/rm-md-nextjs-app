@@ -1,29 +1,29 @@
-# McLain Development
+# Ross McLain Portfolio v2
 
-I built this starting with the Auth0 Next.JS template then created the rest.
-## Project setup
+Portfolio v2 is a Vite + React 19 rebuild with:
 
-Use `npm` to install the project dependencies:
+- updated route architecture (`/`, `/work`, `/work/:slug`, `/resume`, `/labs`)
+- legacy route redirects for old deep links
+- MDX-backed project content (`content/projects/*.mdx`)
+- preserved visual DNA (galaxy background + retro terminal cues)
+
+## Scripts
 
 ```bash
 npm install
-```
-
-### Compile and hot-reload for development
-
-This compiles and serves the Next.js app and starts the API server on port 3001.
-
-```bash
 npm run dev
-```
-
-## Deployment
-
-### Compiles and minifies for production
-
-```bash
+npm run test
 npm run build
-# then
-npm run start
 ```
+
+## Content
+
+- Projects and case studies: `content/projects/*.mdx`
+- Home copy and links: `src/content/site.ts`
+- Timeline milestones: `src/content/timeline.ts`
+- Unity lab runtime config: `src/content/labs.ts`
+
+## Notes
+
+Static SEO files are in `public/robots.txt` and `public/sitemap.xml`.
 
