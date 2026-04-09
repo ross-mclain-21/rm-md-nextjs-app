@@ -47,6 +47,9 @@ export const WorkPage = () => {
   return (
     <>
       <section className="section-spacing">
+        <header className="section-header">
+          <p className="section-label">PORTFOLIO</p>
+        </header>
         <div className="filter-row">
           {tags.map((tag) => {
             const selected = selectedTags.includes(tag);
