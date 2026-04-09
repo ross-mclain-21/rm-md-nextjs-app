@@ -22,16 +22,33 @@
   <circle cx="18" cy="52" r="1" fill="#ff3fa8" />
   <circle cx="48" cy="48" r="0.9" fill="#1ef0de" />
 
-  <text
-    x="32"
-    y="42"
-    text-anchor="middle"
-    fill="url(#teal)"
-    filter="url(#mGlow)"
-    font-family="'PressStart2P', 'IBMPlexMono', monospace"
-    font-size="24"
-    letter-spacing="0.01em"
-  >
-    M
-  </text>
+  <g fill="url(#teal)" filter="url(#mGlow)" shape-rendering="crispEdges">
+    <rect x="16" y="18" width="4" height="4" />
+    <rect x="44" y="18" width="4" height="4" />
+
+    <rect x="16" y="22" width="4" height="4" />
+    <rect x="20" y="22" width="4" height="4" />
+    <rect x="40" y="22" width="4" height="4" />
+    <rect x="44" y="22" width="4" height="4" />
+
+    <rect x="16" y="26" width="4" height="4" />
+    <rect x="24" y="26" width="4" height="4" />
+    <rect x="36" y="26" width="4" height="4" />
+    <rect x="44" y="26" width="4" height="4" />
+
+    <rect x="16" y="30" width="4" height="4" />
+    <rect x="28" y="30" width="4" height="4" />
+    <rect x="32" y="30" width="4" height="4" />
+    <rect x="44" y="30" width="4" height="4" />
+
+    <rect x="16" y="34" width="4" height="4" />
+    <rect x="32" y="34" width="4" height="4" />
+    <rect x="44" y="34" width="4" height="4" />
+
+    <rect x="16" y="38" width="4" height="4" />
+    <rect x="44" y="38" width="4" height="4" />
+
+    <rect x="16" y="42" width="4" height="4" />
+    <rect x="44" y="42" width="4" height="4" />
+  </g>
 </svg>
