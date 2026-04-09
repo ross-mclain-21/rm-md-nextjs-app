@@ -1,21 +1,36 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <defs>
-    <linearGradient id="bg" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#0b1020" />
-      <stop offset="1" stop-color="#1e3a8a" />
+    <radialGradient id="space" cx="24%" cy="18%" r="86%">
+      <stop offset="0%" stop-color="#0f1f24" />
+      <stop offset="42%" stop-color="#070c0e" />
+      <stop offset="100%" stop-color="#030405" />
+    </radialGradient>
+    <linearGradient id="teal" x1="14" y1="12" x2="50" y2="54" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#b5f7ef" />
+      <stop offset="48%" stop-color="#1ef0de" />
+      <stop offset="100%" stop-color="#03c7b5" />
     </linearGradient>
+    <filter id="mGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="0" stdDeviation="1.4" flood-color="#1ef0de" flood-opacity="0.8" />
+      <feDropShadow dx="0" dy="0" stdDeviation="2.6" flood-color="#03c7b5" flood-opacity="0.45" />
+    </filter>
   </defs>
-  <rect width="64" height="64" rx="14" fill="url(#bg)" />
-  <circle cx="50" cy="14" r="4" fill="#facc15" />
+
+  <rect width="64" height="64" rx="14" fill="url(#space)" />
+  <circle cx="14" cy="11" r="1.3" fill="#e5fffb" />
+  <circle cx="52" cy="14" r="1.1" fill="#b5f7ef" />
+  <circle cx="18" cy="52" r="1" fill="#ff3fa8" />
+  <circle cx="48" cy="48" r="0.9" fill="#1ef0de" />
+
   <text
     x="32"
-    y="44"
+    y="42"
     text-anchor="middle"
-    fill="#f8fafc"
-    font-family="Georgia, 'Times New Roman', serif"
-    font-size="34"
-    font-weight="700"
-    letter-spacing="0"
+    fill="url(#teal)"
+    filter="url(#mGlow)"
+    font-family="'PressStart2P', 'IBMPlexMono', monospace"
+    font-size="24"
+    letter-spacing="0.01em"
   >
     M
   </text>
