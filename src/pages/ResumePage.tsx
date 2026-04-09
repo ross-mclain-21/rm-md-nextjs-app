@@ -16,7 +16,7 @@ export const ResumePage = () => {
       <section className="section-spacing">
         <header className="section-header">
           <p className="section-label">RESUME</p>
-          <h1>Current resume and quick highlights</h1>
+          <h1>Current resume</h1>
         </header>
         <ul className="outcomes-list">
           {resumeHighlights.map((item) => (

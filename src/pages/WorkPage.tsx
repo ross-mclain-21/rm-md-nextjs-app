@@ -47,14 +47,6 @@ export const WorkPage = () => {
   return (
     <>
       <section className="section-spacing">
-        <header className="section-header">
-          <p className="section-label">PORTFOLIO</p>
-          <h1>Featured case studies and archive</h1>
-          <p className="section-intro">
-            Filter by technology to surface relevant builds quickly.
-          </p>
-        </header>
-
         <div className="filter-row">
           {tags.map((tag) => {
             const selected = selectedTags.includes(tag);
