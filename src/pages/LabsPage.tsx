@@ -14,7 +14,6 @@ export const LabsPage = () => {
       <section className="section-spacing">
         <header className="section-header">
           <p className="section-label">LABS</p>
-          <h1>Interactive projects</h1>
           <p className="section-intro">
             Labs is where I share interactive projects and experiments.
           </p>

@@ -164,8 +164,4 @@ export const techLens = [
   "UX-first full-stack delivery"
 ];
 
-export const resumeHighlights = [
-  "Built and led multi-year product initiatives across full-stack systems.",
-  "Balanced IC delivery with team leadership and mentoring responsibilities.",
-  "Strong track record modernizing legacy experiences into scalable products."
-];
+export const resumeHighlights: string[] = [];

@@ -16,13 +16,14 @@ export const ResumePage = () => {
       <section className="section-spacing">
         <header className="section-header">
           <p className="section-label">RESUME</p>
-          <h1>Current resume and quick highlights</h1>
         </header>
-        <ul className="outcomes-list">
-          {resumeHighlights.map((item) => (
-            <li key={item}>{item}</li>
-          ))}
-        </ul>
+        {resumeHighlights.length > 0 ? (
+          <ul className="outcomes-list">
+            {resumeHighlights.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        ) : null}
         <a className="primary-button mt-4" href={siteMeta.resumePath} download>
           <Download size={16} />
           Download Resume

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="space" cx="24%" cy="18%" r="86%">
+      <stop offset="0%" stop-color="#0f1f24" />
+      <stop offset="42%" stop-color="#070c0e" />
+      <stop offset="100%" stop-color="#030405" />
+    </radialGradient>
+    <radialGradient id="nebulaA" cx="18%" cy="12%" r="55%">
+      <stop offset="0%" stop-color="#1ef0de" stop-opacity="0.24" />
+      <stop offset="100%" stop-color="#1ef0de" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="nebulaB" cx="84%" cy="84%" r="60%">
+      <stop offset="0%" stop-color="#ff3fa8" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#ff3fa8" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="teal" x1="14" y1="12" x2="50" y2="54" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#b5f7ef" />
+      <stop offset="48%" stop-color="#1ef0de" />
+      <stop offset="100%" stop-color="#03c7b5" />
+    </linearGradient>
+    <filter id="mGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="0" stdDeviation="1.4" flood-color="#1ef0de" flood-opacity="0.8" />
+      <feDropShadow dx="0" dy="0" stdDeviation="2.6" flood-color="#03c7b5" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <rect width="64" height="64" rx="14" fill="url(#space)" />
+  <rect width="64" height="64" rx="14" fill="url(#nebulaA)" />
+  <rect width="64" height="64" rx="14" fill="url(#nebulaB)" />
+
+  <g shape-rendering="crispEdges">
+    <rect x="7" y="9" width="2" height="2" fill="#e5fffb" fill-opacity="0.8" />
+    <rect x="13" y="6" width="1" height="1" fill="#b5f7ef" fill-opacity="0.55" />
+    <rect x="21" y="10" width="1" height="1" fill="#1ef0de" fill-opacity="0.45" />
+    <rect x="29" y="7" width="1" height="1" fill="#e5fffb" fill-opacity="0.6" />
+    <rect x="39" y="10" width="1" height="1" fill="#1ef0de" fill-opacity="0.4" />
+    <rect x="49" y="8" width="2" height="2" fill="#b5f7ef" fill-opacity="0.72" />
+    <rect x="56" y="13" width="1" height="1" fill="#ff3fa8" fill-opacity="0.5" />
+
+    <rect x="9" y="18" width="1" height="1" fill="#1ef0de" fill-opacity="0.42" />
+    <rect x="54" y="20" width="1" height="1" fill="#e5fffb" fill-opacity="0.62" />
+    <rect x="4" y="27" width="1" height="1" fill="#b5f7ef" fill-opacity="0.48" />
+    <rect x="59" y="30" width="1" height="1" fill="#1ef0de" fill-opacity="0.52" />
+    <rect x="8" y="38" width="1" height="1" fill="#ff3fa8" fill-opacity="0.4" />
+    <rect x="55" y="42" width="1" height="1" fill="#e5fffb" fill-opacity="0.58" />
+    <rect x="15" y="55" width="2" height="2" fill="#ff3fa8" fill-opacity="0.6" />
+    <rect x="25" y="58" width="1" height="1" fill="#b5f7ef" fill-opacity="0.46" />
+    <rect x="35" y="56" width="1" height="1" fill="#1ef0de" fill-opacity="0.42" />
+    <rect x="45" y="59" width="1" height="1" fill="#e5fffb" fill-opacity="0.5" />
+    <rect x="53" y="54" width="2" height="2" fill="#1ef0de" fill-opacity="0.55" />
+  </g>
+
+  <g fill="url(#teal)" filter="url(#mGlow)" shape-rendering="crispEdges">
+    <rect x="16" y="16" width="4" height="4" />
+    <rect x="44" y="16" width="4" height="4" />
+
+    <rect x="16" y="20" width="4" height="4" />
+    <rect x="20" y="20" width="4" height="4" />
+    <rect x="40" y="20" width="4" height="4" />
+    <rect x="44" y="20" width="4" height="4" />
+
+    <rect x="16" y="24" width="4" height="4" />
+    <rect x="24" y="24" width="4" height="4" />
+    <rect x="36" y="24" width="4" height="4" />
+    <rect x="44" y="24" width="4" height="4" />
+
+    <rect x="16" y="28" width="4" height="4" />
+    <rect x="28" y="28" width="4" height="4" />
+    <rect x="32" y="28" width="4" height="4" />
+    <rect x="44" y="28" width="4" height="4" />
+
+    <rect x="16" y="32" width="4" height="4" />
+    <rect x="44" y="32" width="4" height="4" />
+    <rect x="16" y="36" width="4" height="4" />
+    <rect x="44" y="36" width="4" height="4" />
+    <rect x="16" y="40" width="4" height="4" />
+    <rect x="44" y="40" width="4" height="4" />
+    <rect x="16" y="44" width="4" height="4" />
+    <rect x="44" y="44" width="4" height="4" />
+  </g>
+</svg>
