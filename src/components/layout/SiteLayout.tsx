@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Link, NavLink, Outlet } from "react-router-dom";
+import type { MouseEvent } from "react";
+import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { siteMeta } from "@/content/site";
 import Galaxy from "@/components/visual/Galaxy";
@@ -13,6 +14,17 @@ const navItems = [
 
 export const SiteLayout = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+
+  const handleNavClick = (event: MouseEvent<HTMLAnchorElement>, href: string) => {
+    setIsOpen(false);
+
+    if (href === "/" && location.pathname === "/") {
+      event.preventDefault();
+      const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      window.scrollTo({ top: 0, behavior: prefersReducedMotion ? "auto" : "smooth" });
+    }
+  };
 
   return (
     <div className="site-shell">
@@ -21,7 +33,7 @@ export const SiteLayout = () => {
           mouseRepulsion={false}
           mouseInteraction={false}
           density={2.3}
-          glowIntensity={0.18}
+          glowIntensity={0.12}
           saturation={0.15}
           hueShift={150}
           speed={2.5}
@@ -52,7 +64,7 @@ export const SiteLayout = () => {
               <NavLink
                 key={item.href}
                 to={item.href}
-                onClick={() => setIsOpen(false)}
+                onClick={(event) => handleNavClick(event, item.href)}
                 className={({ isActive }) =>
                   `nav-link ${isActive ? "active" : ""}`
                 }
@@ -71,7 +83,7 @@ export const SiteLayout = () => {
 
       <footer className="layout-container site-footer">
         <p>
-          Built with React + Vite. Designed and coded by {siteMeta.name}.
+          Designed and developed by {siteMeta.name}.
         </p>
       </footer>
     </div>

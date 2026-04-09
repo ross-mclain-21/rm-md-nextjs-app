@@ -1,4 +1,4 @@
-import matter from "gray-matter";
+import { parse as parseYaml } from "yaml";
 import type { CaseStudy, ProjectEntry } from "@/lib/types";
 import { sortProjects } from "@/lib/project-utils";
 
@@ -10,10 +10,23 @@ const rawProjectModules = import.meta.glob("/content/projects/*.mdx", {
   import: "default"
 }) as RawFileMap;
 
+const splitFrontmatter = (raw: string) => {
+  const match = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/);
+
+  if (!match) {
+    throw new Error("Invalid project file format. Missing YAML frontmatter.");
+  }
+
+  return {
+    frontmatter: match[1],
+    content: match[2]
+  };
+};
+
 const parsedProjects: CaseStudy[] = Object.entries(rawProjectModules).map(
   ([filePath, raw]) => {
-    const parsed = matter(raw);
-    const data = parsed.data as ProjectEntry;
+    const parsed = splitFrontmatter(raw);
+    const data = parseYaml(parsed.frontmatter) as ProjectEntry;
     const fallbackSlug = filePath.split("/").at(-1)?.replace(".mdx", "") ?? "";
 
     return {

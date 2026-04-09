@@ -84,9 +84,8 @@ export const WorkPage = () => {
       <section className="section-spacing">
         <header className="section-header">
           <p className="section-label">FEATURED</p>
-          <h2>Primary portfolio work</h2>
         </header>
-        <div className="project-grid">
+        <div className="project-grid featured-project-grid">
           {featured.map((project) => (
             <ProjectCard key={project.slug} project={project} />
           ))}
@@ -96,9 +95,8 @@ export const WorkPage = () => {
       <section className="section-spacing">
         <header className="section-header">
           <p className="section-label">ARCHIVE</p>
-          <h2>Additional projects and experiments</h2>
         </header>
-        <div className="project-grid">
+        <div className="project-grid archive-project-grid">
           {archive.map((project) => (
             <ProjectCard key={project.slug} project={project} />
           ))}
@@ -107,11 +105,8 @@ export const WorkPage = () => {
 
       <section className="section-spacing callout-panel">
         <p className="section-label">LABS</p>
-        <h2>Playable legacy game projects are still available.</h2>
-        <p>
-          {labProjects.length} archived interactive projects can be launched in
-          the labs area.
-        </p>
+        <h2>Labs is where I share interactive projects.</h2>
+        <p>Interactive projects are available in the labs area.</p>
         <Link className="primary-button" to="/labs">
           Open Labs
         </Link>

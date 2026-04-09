@@ -3,6 +3,8 @@ import { resumeHighlights, siteMeta } from "@/content/site";
 import { usePageMeta } from "@/lib/usePageMeta";
 
 export const ResumePage = () => {
+  const resumeViewerPath = `${siteMeta.resumePath}#navpanes=0&pagemode=none`;
+
   usePageMeta({
     title: "Resume | Ross McLain",
     description: "Resume and highlights for Ross McLain, Senior Full Stack Engineer.",
@@ -30,7 +32,7 @@ export const ResumePage = () => {
       <section className="section-spacing">
         <div className="resume-frame-wrap">
           <iframe
-            src={siteMeta.resumePath}
+            src={resumeViewerPath}
             title="Ross McLain Resume"
             className="resume-frame"
           />

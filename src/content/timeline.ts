@@ -4,10 +4,10 @@ export const timelineMilestones: TimelineMilestone[] = [
   {
     id: "usm",
     year: "2013-2018",
-    title: "Computer Science Foundation",
+    title: "Computer Science Degree",
     organization: "University of Southern Maine",
     summary:
-      "Built formal computer science fundamentals while experimenting with web and game development projects.",
+      "Built formal computer science fundamentals, deployed my first production website, and worked on game projects in the CI2 lab on the USM campus.",
     techHighlights: ["C#", "Unity", "Web Fundamentals"]
   },
   {
@@ -34,8 +34,8 @@ export const timelineMilestones: TimelineMilestone[] = [
     title: "Senior Engineer -> Tech Lead",
     organization: "Blue Rabbit Veterinary",
     summary:
-      "Helped define and lead Practice Portal development while scaling architecture and team delivery standards.",
-    techHighlights: ["React", "Node.js", "Tailwind", "MongoDB"]
+      "Led Practice Portal delivery, built Salesforce-integrated order approval flows, and implemented Kafka-backed event workflows while scaling architecture and team delivery standards.",
+    techHighlights: ["React", "Node.js", "Salesforce", "Kafka", "MongoDB"]
   },
   {
     id: "tyler-return",
@@ -44,6 +44,6 @@ export const timelineMilestones: TimelineMilestone[] = [
     organization: "Tyler Technologies",
     summary:
       "Returned with expanded leadership and product experience to modernize existing products and launch new initiatives.",
-    techHighlights: ["TypeScript", "Express", "TanStack Query", "AWS"]
+    techHighlights: ["React", "TypeScript", "Express", "TanStack Query", "AWS"]
   }
 ];
