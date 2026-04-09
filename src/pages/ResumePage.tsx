@@ -16,7 +16,6 @@ export const ResumePage = () => {
       <section className="section-spacing">
         <header className="section-header">
           <p className="section-label">RESUME</p>
-          <h1>Current resume</h1>
         </header>
         {resumeHighlights.length > 0 ? (
           <ul className="outcomes-list">
