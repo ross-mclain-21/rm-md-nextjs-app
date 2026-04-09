@@ -106,6 +106,8 @@ export const HomePage = () => {
           </a>
         </motion.div>
 
+        <p className="section-label hero-stack-label">TECH STACK</p>
+
         <motion.div
           className="hero-stack-grid"
           initial={{ opacity: 0 }}
