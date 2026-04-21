@@ -15,8 +15,8 @@ import { usePageMeta } from "@/lib/usePageMeta";
 
 export const WorkPage = () => {
   usePageMeta({
-    title: "Work | Ross McLain",
-    description: "Featured and archived case studies from Ross McLain's portfolio.",
+    title: "Projects | Ross McLain",
+    description: "Featured and archived projects from Ross McLain's portfolio.",
     path: "/work"
   });
 
@@ -48,7 +48,7 @@ export const WorkPage = () => {
     <>
       <section className="section-spacing">
         <header className="section-header">
-          <p className="section-label">PORTFOLIO</p>
+          <p className="section-label">PROJECTS</p>
         </header>
         <div className="filter-row">
           {tags.map((tag) => {

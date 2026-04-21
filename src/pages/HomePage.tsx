@@ -96,7 +96,7 @@ export const HomePage = () => {
           transition={{ duration: 0.55, delay: 0.36 }}
         >
           <Link className="primary-button" to="/work">
-            View Work <ArrowRight size={16} />
+            View Projects <ArrowRight size={16} />
           </Link>
           <a className="pink-button" href="#work-with-me" onClick={handleCenteredScroll("work-with-me")}>
             Work with me <ArrowRight size={16} />
@@ -156,7 +156,7 @@ export const HomePage = () => {
 
       <section className="section-spacing">
         <header className="section-header">
-          <p className="section-label">FEATURED WORK</p>
+          <p className="section-label">FEATURED PROJECTS</p>
           <h2>Recent projects</h2>
         </header>
         <div className="project-grid">
