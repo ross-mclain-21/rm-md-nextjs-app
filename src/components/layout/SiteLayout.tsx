@@ -7,7 +7,7 @@ import Galaxy from "@/components/visual/Galaxy";
 
 const navItems = [
   { href: "/", label: "Home" },
-  { href: "/work", label: "Work" },
+  { href: "/work", label: "Portfolio" },
   { href: "/resume", label: "Resume" },
   { href: "/labs", label: "Labs" }
 ];

@@ -30,7 +30,7 @@ export const WorkDetailPage = () => {
     <>
       <section className="section-spacing case-study">
         <Link className="inline-link" to="/work">
-          <ArrowLeft size={16} /> Back to work
+          <ArrowLeft size={16} /> Back to portfolio
         </Link>
         <p className="section-label">{project.year}</p>
         <h1>{project.title}</h1>
@@ -95,7 +95,7 @@ export const WorkDetailPage = () => {
         <section className="section-spacing">
           <header className="section-header">
             <p className="section-label">RELATED</p>
-            <h2>More work in adjacent stacks</h2>
+            <h2>More portfolio work in adjacent stacks</h2>
           </header>
           <div className="related-grid">
             {related.map((item) => (

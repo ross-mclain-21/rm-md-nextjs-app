@@ -10,13 +10,14 @@ import {
   getAllTags,
   sortProjects
 } from "@/lib/project-utils";
+import { getPortfolioFilterLogo } from "@/content/portfolio-filter-logos";
 import { ProjectCard } from "@/components/work/ProjectCard";
 import { usePageMeta } from "@/lib/usePageMeta";
 
 export const WorkPage = () => {
   usePageMeta({
-    title: "Work | Ross McLain",
-    description: "Featured and archived case studies from Ross McLain's portfolio.",
+    title: "Portfolio | Ross McLain",
+    description: "Featured and archived projects from Ross McLain's portfolio.",
     path: "/work"
   });
 
@@ -53,6 +54,7 @@ export const WorkPage = () => {
         <div className="filter-row">
           {tags.map((tag) => {
             const selected = selectedTags.includes(tag);
+            const logo = getPortfolioFilterLogo(tag);
             return (
               <button
                 key={tag}
@@ -60,7 +62,18 @@ export const WorkPage = () => {
                 onClick={() => toggleTag(tag)}
                 type="button"
               >
-                {tag}
+                {logo ? (
+                  <img
+                    src={logo.src}
+                    alt=""
+                    aria-hidden="true"
+                    className={`tag-toggle-icon ${
+                      logo.tone === "filtered" ? "tag-toggle-icon--filtered" : ""
+                    }`}
+                    loading="lazy"
+                  />
+                ) : null}
+                <span>{tag}</span>
               </button>
             );
           })}

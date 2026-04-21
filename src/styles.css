@@ -611,12 +611,26 @@ a {
 }
 
 .tag-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
   border: 1px solid var(--color-border);
   border-radius: 999px;
   background: rgba(5, 12, 14, 0.9);
   color: var(--color-text);
   padding: 0.32rem 0.62rem;
   cursor: pointer;
+}
+
+.tag-toggle-icon {
+  width: 0.95rem;
+  height: 0.95rem;
+  flex: 0 0 0.95rem;
+  object-fit: contain;
+}
+
+.tag-toggle-icon--filtered {
+  filter: brightness(0) saturate(100%) invert(100%);
 }
 
 .tag-toggle.selected {
