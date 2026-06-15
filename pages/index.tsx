@@ -23,7 +23,8 @@ const Index = () => {
           className="btn btn-link ff-press-start"
           onClick={() => {
             scrollToElement();
-          }}>
+          }}
+        >
           <h5 className="mb-5">BACK TO TOP</h5>
         </button>
       </div>

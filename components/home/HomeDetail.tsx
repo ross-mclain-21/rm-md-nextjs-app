@@ -19,7 +19,7 @@ const HomeDetail = () => {
             <div className="ms-2 d-flex align-items-center">
               <HomeDetailListItem
                 faIcon={faAt}
-                text={'Tyler Technologies'}
+                text={'Wedgewood'}
                 faClasses="small"
                 isLink={true}
                 link="https://bluerabbit.vet/"

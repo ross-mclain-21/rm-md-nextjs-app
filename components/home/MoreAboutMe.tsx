@@ -357,6 +357,34 @@ const MoreAboutMe = () => {
           </div>
         </div>
       </div>
+      <div className="row about-me-life-moment">
+        <div className="col-md-6 d-flex justify-content-center">
+          <div className="p-3">
+            <p className="code ff-press-start">2026</p>
+            <p className="code ff-press-start">AWS Connect Engineer</p>
+            <p>
+              In June 2026, after almost two years back at Tyler Technologies I decided to take an opportunity to at
+              Wedgewood Pharmacy to rejoin friends and to get back into the techstack I prefer. Starting out I am
+              focusing on learning and improving the AWS Connect functionality within our team and then I will be
+              branching out to work on more projects in the future.
+            </p>
+          </div>
+        </div>
+        <div className="col-md-6 d-flex flex-column align-items-center justify-content-center">
+          <div className="px-3 d-flex align-items-center justify-content-center flex-wrap">
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">React</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">Node</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">TypeScript</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">Tanstack Query</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">ExpressJS</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">TailwindCSS</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">PostgreSQL</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">AWS</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">ASP.NET</span>
+            <span className="about-me-skill-icon-text p-3 me-3 mb-3">jQuery</span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
